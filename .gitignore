@@ -15,7 +15,7 @@
 *.iws
 *.iml
 *.ipr
-baike
+/baike
 
 ### NetBeans ###
 /nbproject/private/
