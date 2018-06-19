@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mama.baike.dao.catalog.CatalogDao">
+
+    <resultMap id="BaseResultMap" type="com.mama.baike.entity.catalog.CatalogEntity">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="catalog_name" jdbcType="VARCHAR" property="catalogName" />
+        <result column="parent_id" jdbcType="INTEGER" property="parentId" />
+        <result column="catalog_type" jdbcType="VARCHAR" property="catalogType" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+        <result column="status" jdbcType="VARCHAR" property="status" />
+    </resultMap>
+
+    <select id="queryList" resultMap="BaseResultMap"
+            parameterType="com.mama.baike.entity.catalog.CatalogQuery">
+
+        select * from c_catalog c where 1=1
+        <if test="catalogName != null">
+            AND c.catalog_name = #{catalogName}
+        </if>
+        <if test="catalogType != null">
+            AND c.catalog_type = #{catalogType}
+        </if>
+        <if test="status != null">
+            AND c.status = #{status}
+        </if>
+    </select>
+
+</mapper>
