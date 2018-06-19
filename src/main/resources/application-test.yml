@@ -3,30 +3,29 @@ spring:
       multipart:
         max-file-size: 10MB
         max-request-size: 10MB
-eureka:
-  instance:
-      prefer-ip-address: true
-  client:
-    service-url:
-      defaultZone: http://10.70.160.63:8800/eureka/
+  datasource:
+      username: root
+      password:
+      driver-class-name: net.sf.log4jdbc.DriverSpy
+      url: jdbc:log4jdbc:mysql://localhost:3306/baike?characterEncoding=utf8&useSSL=true&serverTimezone=Hongkong&strictUpdates=false&autoReconnect=true
+      initialSize: 5
+      minIdle: 1
+      maxActive: 200
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 200000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnReturn: true
+
 server:
-  port: 6317
+  port: 6395
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
-custom:
-  datasource:
-    username: cloud_testuser
-    password: u)ksjlmfe6clmDCe8m
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: net.sf.log4jdbc.DriverSpy
-    url: jdbc:log4jdbc:mysql://10.70.160.19:6033/company_information?characterEncoding=utf8&useSSL=true&serverTimezone=Hongkong&strictUpdates=false
-    initialSize: 5
-    minIdle: 1
-    maxActive: 200
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 200000
-    validationQuery: SELECT 1
-    testWhileIdle: true
-    testOnBorrow: true
-    testOnReturn: true
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
