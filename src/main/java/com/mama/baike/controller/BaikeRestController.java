@@ -19,15 +19,6 @@ public class BaikeRestController {
     @Autowired
     private CatalogService catalogService;
 
-    @RequestMapping("/test")
-    public ResultBody wolcome()
-    {
-        ResultBody resultBody = new ResultBody();
-        resultBody.setMessage("欢迎");
-        resultBody.setData(200);
-        return resultBody;
-    }
-
     /**
      * 目录查询
      * @return
