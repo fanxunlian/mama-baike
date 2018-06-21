@@ -1,0 +1,176 @@
+/*妈妈网log*/
+.index-nav-top-log
+{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: auto;
+    height: auto;
+    float: left;
+}
+/**
+输入框
+ */
+.index-nav-top-input{
+    width: 600px;
+    height: 120px;
+    float: left;
+}
+.index-nav-top-input input {
+    float: right;
+    margin-top: 40px;
+    width: 400px;
+    height: 40px;
+    border:1px solid RGB(106,191,75);
+    font-size: 16px;
+
+}
+/*搜索按钮*/
+ .search-btn{
+
+     width: 100px;
+     height: 120px;
+     float: left;
+}
+ /*搜索框按钮图片*/
+.search-btn img
+{
+    margin-top: 40px;
+    width : 65px;
+    height: 44px;
+    border :0px;
+}
+/*导航栏*/
+.index-nav-top
+{
+    margin: auto;
+    background-color:RGB(106,191,75);
+    height:46px;
+}
+/*导航栏字体*/
+/*首页*/
+.nav_list_main_title{
+    margin-left:100px ;
+    width: 80px;
+    float: left;
+    zoom:1;
+}
+.nav_list_main_title li{
+    display:inline-block;
+    width: 200px;
+    height:46px;
+    padding:0 18px;
+    font-size:20px;
+    line-height:46px;
+    color:#fff;
+    font-weight: bold;
+}
+
+/*大标题*/
+.nav_list_title{
+    float: left;
+    display:inline-block;
+    width: 40px;
+    height:46px;
+    padding:0 18px;
+    font-size:18px;
+    line-height:46px;
+    color:#ffff;
+    font-weight: bold;
+}
+
+/*小标题*/
+.nav_list{
+    float: left;
+    margin: auto;
+    height: 46px;
+    zoom:1;
+}
+.nav_list li{display:inline-block;float:left;height:46px;margin-right:2px; }
+.nav_list li a{display:inline-block;height:46px;padding:0 18px;font-size:16px;line-height:46px;color:#fff;}
+.nav_list li .on,
+.nav_list li a:hover{background-color:RGB(64,155,31);color:#fff;text-decoration:none; }
+
+.advise
+{
+    width: 1130px;
+    height: 300px;
+    margin: 10px auto;
+}
+.advise .sowing-map
+{
+    margin-top: 10px;
+    float: left;
+    width: 60%;
+    height: 280px;
+    background-color: aquamarine;
+}
+.sowing-map img
+{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+.advise .baby-brithday
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+    width: 36%;
+    height: 280px;
+    background-color: RGB(255,241,241);
+}
+/*新闻*/
+.news
+{
+    width: 1130px;
+    height: 600px;
+    margin: 10px auto;
+}
+.news .today-news
+{
+    float: left;
+    width: 500px;
+    height: 580px;
+    margin: 10px auto;
+}
+.news  .title{
+    margin-top: 5px;
+    float: left;
+    width: 500px;
+    height: 40px;
+    margin: 0px auto;
+    font-size: 25px;
+}
+.news .today-news .content
+{
+    float: left;
+    width: 500px;
+    height: 540px;
+    border-top: 1px solid #400040 ;
+}
+.news .today-photo
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    width: 300px;
+    height: 580px;
+    background-color: aquamarine;
+}
+.news .today-more
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: right;
+    width: 310px;
+    height: 580px;
+    background-color: aquamarine;
+}
+/*底部*/
+.bottom
+{
+    width: 1130px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: antiquewhite;
+}
