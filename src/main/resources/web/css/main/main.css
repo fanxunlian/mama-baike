@@ -100,7 +100,7 @@
 {
     margin-top: 10px;
     float: left;
-    width: 60%;
+    width: 710px;
     height: 280px;
     background-color: aquamarine;
 }
@@ -115,9 +115,15 @@
     margin-left: 10px;
     margin-top: 10px;
     float: right;
-    width: 36%;
+    width: 400px;
     height: 280px;
     background-color: RGB(255,241,241);
+}
+.advise .baby-brithday img
+{
+    float: right;
+    width: 400px;
+    height: 280px;
 }
 /*新闻*/
 .news
@@ -140,13 +146,48 @@
     height: 40px;
     margin: 0px auto;
     font-size: 25px;
+    color: RGB(253,91,120);
+
 }
 .news .today-news .content
 {
     float: left;
     width: 500px;
     height: 540px;
-    border-top: 1px solid #400040 ;
+    border-top: 1px solid rgba(226, 0, 226, 0.16) ;
+}
+.news .today-news .content .dd
+{
+    float: left;
+    width: 500px;
+    height: 170px;
+    border-top: 1px solid rgba(226, 0, 226, 0.16) ;
+}
+.news .today-news .content .dd .dt
+{
+    margin-top: 10px;
+    float: left;
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+}
+.news .today-news .content .dd .small
+{
+    margin-top: 15px;
+    float: left;
+    width: 500px;
+    height: 55px;
+    font-size: 16px;
+    color: gray;
+}
+.news .today-news .content .dd .similar
+{
+    margin-top: 10px;
+    float: left;
+    width: 500px;
+    height: 40px;
+    font-size: 16px;
+    color: gray;
 }
 .news .today-photo
 {
@@ -155,7 +196,19 @@
     float: left;
     width: 300px;
     height: 580px;
-    background-color: aquamarine;
+}
+.news .today-photo .content
+{
+    float: left;
+    width: 300px;
+    height: 540px;
+    border-top: 1px solid rgba(226, 0, 226, 0.16);
+}
+.news .today-photo .content img
+{
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
 }
 .news .today-more
 {
@@ -164,7 +217,145 @@
     float: right;
     width: 310px;
     height: 580px;
-    background-color: aquamarine;
+}
+.news .today-more .content
+{
+    float: left;
+    width: 300px;
+    height: 540px;
+    border-top: 1px solid rgba(226, 0, 226, 0.16) ;
+}
+.news .today-more .content .dt
+{
+    float: left;
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.hot-man
+{
+    margin: 10px auto;
+    width: 1130px;
+    height: 250px;
+}
+.hot-man .content
+{
+    margin: 10px auto;
+    width: 1130px;
+    height: 200px;
+}
+.hot-man .title{
+    width: 1130px;
+    height: 40px;
+    font-size: 24px;
+    color:RGB(253,91,120);
+    border-bottom:1px solid rgba(226, 0, 226, 0.16) ;
+}
+.hot-man .content img
+{
+    margin-top: 10px;
+    width: 180px;
+    height: 180px;
+}
+.my-baby
+{
+    margin: 10px auto;
+    width: 1130px;
+    height: 500px;
+}
+.my-baby .title{
+    margin-top: 20px;
+    width: 1130px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    font-size: 30px;
+    border-bottom:1px solid rgba(226, 0, 226, 0.16) ;
+    color: RGB(112,202,183);
+}
+.my-baby .content
+{
+    margin: 10px auto;
+    width: 1130px;
+    height: 430px;
+}
+.my-baby .content .left-img
+{
+    float: left;
+    height: 430px;
+    width: 400px;
+}
+.my-baby .content .left-img img
+{
+    height: 430px;
+    width: 400px;
+}
+.my-baby .content .news{
+    margin-left: 20px;
+    height: 430px;
+    width: 600px;
+    float: left;
+}
+.my-baby .content .dd
+{
+    float: left;
+    width: 400px;
+    height: 130px;
+}
+.my-baby .content .news .dd .dt
+{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+}
+.my-baby .content .news .dd .small
+{
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    color: gray;
+}
+
+/*社交*/
+.social
+{
+    margin: 20px auto;
+    width: 1130px;
+    height: 500px;
+}
+.social .title{
+    margin-top: 20px;
+    width: 1130px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    font-size: 30px;
+    border-bottom:1px solid rgba(226, 0, 226, 0.16) ;
+    color: RGB(112,202,183);
+}
+.star-mama
+{
+    margin: 10px auto;
+    width: 1130px;
+    height: 500px;
+}
+.star-mama .title{
+    margin-top: 20px;
+    width: 1130px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    font-size: 30px;
+    border-bottom:1px solid rgba(226, 0, 226, 0.16) ;
+    color: RGB(112,202,183);
 }
 /*底部*/
 .bottom
