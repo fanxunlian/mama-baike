@@ -1,8 +1,10 @@
 package com.mama.baike.controller;
 
+import com.mama.baike.annotation.LoginUser;
 import com.mama.baike.common.ResultBody;
 import com.mama.baike.entity.catalog.CatalogEntity;
 import com.mama.baike.entity.catalog.CatalogQuery;
+import com.mama.baike.entity.user.UserEntity;
 import com.mama.baike.service.CatalogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,7 +26,7 @@ public class BaikeRestController {
      * @return
      */
     @RequestMapping("/catalog/index")
-    public ResultBody indexCatalog(@RequestBody CatalogQuery catalogQuery)
+    public ResultBody indexCatalog(@RequestBody CatalogQuery catalogQuery,@LoginUser UserEntity userEntity)
     {
         List<CatalogEntity> catalogEntities =  catalogService.findCatalog(catalogQuery);
         ResultBody resultBody = new ResultBody();
