@@ -5,7 +5,7 @@ spring:
         max-request-size: 10MB
   datasource:
       username: root
-      password:
+      password: root
       driver-class-name: net.sf.log4jdbc.DriverSpy
       url: jdbc:log4jdbc:mysql://localhost:3306/baike?characterEncoding=utf8&useSSL=true&serverTimezone=Hongkong&strictUpdates=false&autoReconnect=true
       initialSize: 5
@@ -21,6 +21,7 @@ spring:
 
 server:
   port: 6395
+  ontext-path: /web
 
 mybatis:
   mapper-locations: classpath:/mapper/*.xml

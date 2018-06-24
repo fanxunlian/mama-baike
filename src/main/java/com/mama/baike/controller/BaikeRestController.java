@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
@@ -26,8 +28,11 @@ public class BaikeRestController {
      * @return
      */
     @RequestMapping("/catalog/index")
-    public ResultBody indexCatalog(@RequestBody CatalogQuery catalogQuery,@LoginUser UserEntity userEntity)
+    public ResultBody indexCatalog(@RequestBody CatalogQuery catalogQuery,@LoginUser UserEntity userEntity,HttpServletRequest request)
     {
+        HttpSession session = request.getSession();
+        System.out.println(session.getId());
+
         List<CatalogEntity> catalogEntities =  catalogService.findCatalog(catalogQuery);
         ResultBody resultBody = new ResultBody();
         resultBody.setData(catalogEntities);

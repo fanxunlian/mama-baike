@@ -40,6 +40,7 @@ public class AuthenticationInterceptor extends HandlerInterceptorAdapter {
         }
       
         HttpSession session = request.getSession();
+        System.out.println("pre"+session.getId());
 		Object loginUserId =  session.getAttribute(WebMvcConstant.LOGIN_USER_SESSION_KEY);
 		if(loginUserId == null){
 			//throw new GlobalException("请登录系统");

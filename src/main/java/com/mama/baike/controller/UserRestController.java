@@ -20,12 +20,13 @@ public class UserRestController {
     @ResponseBody
     @RequestMapping("/login")
     @AuthIgnore
-    public ResultBody indexCatalog(HttpServletRequest request,@RequestParam(value = "mobile") String mobile, @RequestParam(value = "verifyCode") String verifyCode)
+    public ResultBody login(HttpServletRequest request,@RequestParam(value = "mobile") String mobile, @RequestParam(value = "verifyCode") String verifyCode)
     {
         UserEntity userEntity = new UserEntity();
         userEntity.setId(1111);
 
         HttpSession session = request.getSession();
+        System.out.println("login:"+session.getId());
         session.setAttribute(WebMvcConstant.LOGIN_USER_SESSION_KEY, userEntity.getId());
 
         ResultBody resultBody = new ResultBody();
