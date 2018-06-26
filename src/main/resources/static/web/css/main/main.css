@@ -1,4 +1,11 @@
 /*妈妈网log*/
+.nav
+{
+    width: 1000px;
+    height:120px;
+    margin: 0px auto;
+}
+
 .index-nav-top-log
 {
     margin-top: 20px;

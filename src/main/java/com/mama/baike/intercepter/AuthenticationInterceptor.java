@@ -51,7 +51,7 @@ public class AuthenticationInterceptor extends HandlerInterceptorAdapter {
 				url.append(request.getQueryString());
 			}
 
-			response.sendRedirect("/user/personal/login?redirectUrl="+URLEncoder.encode(url.toString(), "utf-8"));
+			response.sendRedirect("/web/user/login/?redirectUrl="+URLEncoder.encode(url.toString(), "utf-8"));
 			return false;
 		}else{
 			return true;

@@ -1,11 +1,17 @@
 spring:
+ # 指定静态资源的路径
+  resources:
+      static-locations: classpath:static/
+  thymeleaf:
+      suffix: .html
+      mode: HTML
   http:
       multipart:
         max-file-size: 10MB
         max-request-size: 10MB
   datasource:
       username: root
-      password: root
+      password:
       driver-class-name: net.sf.log4jdbc.DriverSpy
       url: jdbc:log4jdbc:mysql://localhost:3306/baike?characterEncoding=utf8&useSSL=true&serverTimezone=Hongkong&strictUpdates=false&autoReconnect=true
       initialSize: 5

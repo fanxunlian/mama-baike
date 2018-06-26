@@ -6,12 +6,7 @@ a:active{color:#400040;text-decoration:none /*无下划线*/}
 
 .clearfix{display:block;zoom:1}
 
-.nav
-{
-    width: 1000px;
-    height:120px;
-    margin: 0px auto;
-}
+
 body{
 
     margin: 0px auto;
