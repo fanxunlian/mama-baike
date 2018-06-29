@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>妈妈网-怀孕-待产-产后-月子等知识平台</title>
     <meta name="keywords" content="育儿" />
     <meta name="description" content="育儿平台" />
     <!--css-->
-    <link href="css/common/common.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="css/main/main.css" type="text/css" rel="stylesheet" media="screen">
+    <link th:href="@{web-static/css/common/common.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{web-static/css/main/main.css}" type="text/css" rel="stylesheet" media="screen"/>
 
 </head>
 
@@ -15,7 +15,7 @@
     <div class="nav">
         <div class="index-nav-top-log">
             <a href="#" target="_blank" title="妈妈网">
-                <img src="imgs/main/mama-log.png" width="157" height="80" border="0">
+                <img th:src="@{web-static/imgs/main/mama-log.png}" width="157" height="80" border="0"/>
             </a>
         </div>
         <div class="index-nav-top-input">
@@ -23,14 +23,14 @@
         </div>
         <div class="search-btn">
             <a href="#" target="_blank" title="妈妈网">
-                <img src="imgs/nav/search.png">
+                <img th:src="@{web-static/imgs/nav/search.png}"/>
             </a>
         </div>
     </div>
     <div class="index-nav-top">
         <div class="nav_list_main_title">
             <li>
-                首页
+                <span class="text" th:text="首页"></span>
             </li>
         </div>
         <div class="nav_list_title">
@@ -61,13 +61,13 @@
     <div class="advise">
         <div class="sowing-map">
             <a href="#" target="_blank" title="妈妈网">
-                <img src="imgs/ad/ad.jpg">
+                <img th:src="@{web-static/imgs/ad/ad.jpg}"/>
             </a>
 
         </div>
         <div class="baby-brithday">
             <a href="#" target="_blank" title="妈妈网">
-                <img src="imgs/ad/baby.jpg">
+                <img th:src="@{web-static/imgs/ad/baby.jpg}"/>
             </a>
         </div>
     </div>
@@ -121,10 +121,10 @@
             </div>
             <div class="content">
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/ad1.jpg">
+                    <img th:src="@{web-static/imgs/ad/ad1.jpg}"/>
                 </a>
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/ad2.jpg">
+                    <img th:src="@{web-static/imgs/ad/ad2.jpg}"/>
                 </a>
             </div>
         </div>
@@ -185,22 +185,22 @@
         </div>
         <div class="content">
             <a href="#" target="_blank" title="妈妈网">
-                <img src="imgs/ad/baby.jpg">
+                <img th:src="@{web-static/imgs/ad/baby.jpg}"/>
                 </a>
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/baby.jpg">
+                    <img th:src="@{web-static/imgs/ad/baby.jpg}"/>
                 </a>
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/baby.jpg">
+                    <img th:src="@{web-static/imgs/ad/baby.jpg}"/>
                 </a>
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/baby.jpg">
+                    <img th:src="@{web-static/imgs/ad/baby.jpg}"/>
                 </a>
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/baby.jpg">
+                    <img th:src="@{web-static/imgs/ad/baby.jpg}"/>
                 </a>
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/baby.jpg">
+                    <img th:src="@{web-static/imgs/ad/baby.jpg}"/>
                 </a>
         </div>
 
@@ -213,7 +213,7 @@
         <div class="content">
             <div class="left-img">
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/ad4.jpg">
+                    <img th:src="@{web-static/imgs/ad/ad4.jpg}"/>
                 </a>
             </div>
             <div class="news">
@@ -253,7 +253,7 @@
         <div class="content">
             <div class="left">
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/ad6.png">
+                    <img th:src="@{web-static/imgs/ad/ad6.png}"/>
                 </a>
                 <div class="news">
                     <div class="line-news">
@@ -279,12 +279,12 @@
             <div class="middle">
                 <div class="top-img">
                     <a href="#" target="_blank" title="妈妈网">
-                        <img src="imgs/ad/ad7.png">
+                        <img th:src="@{web-static/imgs/ad/ad7.png}"/>
                     </a>
                 </div>
                 <div class="bottom-img">
                     <a href="#" target="_blank" title="妈妈网">
-                        <img src="imgs/ad/ad7.png">
+                        <img th:src="@{web-static/imgs/ad/ad7.png}"/>
                     </a>
                 </div>
             </div>
@@ -301,24 +301,24 @@
                 美妆主题
             </div>
             <a href="#" target="_blank" title="妈妈网">
-                <img src="imgs/ad/ad8.jpg">
+                <img th:src="@{web-static/imgs/ad/ad8.jpg}"/>
             </a>
         </div>
         <div class="right">
             <div class="top">
                 <a href="#" target="_blank" title="妈妈网">
-                    <img src="imgs/ad/ad9.jpg">
+                    <img th:src="@{web-static/imgs/ad/ad9.jpg}"/>
                 </a>
             </div>
             <div class="bottom">
                 <div class="left">
                     <a href="#" target="_blank" title="妈妈网">
-                        <img src="imgs/ad/ad8.jpg">
+                        <img th:src="@{web-static/imgs/ad/ad8.jpg}"/>
                     </a>
                 </div>
                 <div class="right">
                     <a href="#" target="_blank" title="妈妈网">
-                        <img src="imgs/ad/ad8.jpg">
+                        <img th:src="@{web-static/imgs/ad/ad8.jpg}"/>
                     </a>
                 </div>
             </div>
@@ -328,8 +328,8 @@
    <!-- <div class="bottom">
 
     </div>-->
-    <script type="text/javascript" src="js/jquery/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/main/index.js"></script>
+    <script type="text/javascript" th:src="@{web-static/js/jquery/jquery-1.7.2.min.js}"></script>
+    <script type="text/javascript" th:src="@{web-static/js/main/index.js}"></script>
 
 </body>
 </html>

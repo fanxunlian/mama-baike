@@ -1,7 +1,16 @@
 spring:
   profiles:
-   active: dev
+    active: dev
   application:
     name: RISKCONTROL.SERVICE.REPORT.dev-1
+   # 指定静态资源的路径
+  resources:
+    static-locations: classpath:static/
+  # thymeleaf模板引擎配置
+  thymeleaf:
+    suffix: .html
+    mode: HTML5
+    prefix: classpath:templates/
+
 logging:
   config: classpath:logback-spring.xml

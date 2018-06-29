@@ -6,7 +6,7 @@ $(".login-btn").click(function(){
     $.ajax(
         {
             type: "post",
-            url: "/user/login",
+            url: "/api/user/login",
             dataType: "json",
             data: data,
             success: function (res) {
@@ -14,7 +14,7 @@ $(".login-btn").click(function(){
                 }
                 if (res['code'] == 200) {
                     console.log("登录成功");
-                    window.location.href = "/web/index.html";
+                    window.location.href = "/index.html";
                 } else{
 
                 }

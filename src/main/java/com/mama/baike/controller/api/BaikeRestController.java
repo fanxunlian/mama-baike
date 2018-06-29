@@ -1,4 +1,4 @@
-package com.mama.baike.controller;
+package com.mama.baike.controller.api;
 
 import com.mama.baike.annotation.LoginUser;
 import com.mama.baike.common.ResultBody;
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
-@RequestMapping("/baike")
+@RequestMapping("/api/baike")
 public class BaikeRestController {
 
     @Autowired

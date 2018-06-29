@@ -24,7 +24,6 @@ public class AuthenticationInterceptor extends HandlerInterceptorAdapter {
 	@Autowired
 	private CcoopfsProperty ccoopfsProperty;
 	*/
-	
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         AuthIgnore annotation;
@@ -34,24 +33,20 @@ public class AuthenticationInterceptor extends HandlerInterceptorAdapter {
             return true;
         }
 
-        //如果有@IgnoreAuth注解，则不验证
+        //如果有@AuthIgnore，则不验证
         if(annotation != null){
             return true;
         }
       
         HttpSession session = request.getSession();
-        System.out.println("pre"+session.getId());
 		Object loginUserId =  session.getAttribute(WebMvcConstant.LOGIN_USER_SESSION_KEY);
 		if(loginUserId == null){
-			//throw new GlobalException("请登录系统");
-				
 			StringBuffer url = new StringBuffer(request.getRequestURI());
 			if(StringUtils.isNotEmpty(request.getQueryString())){
 				url.append("?");
 				url.append(request.getQueryString());
 			}
-
-			response.sendRedirect("/web/user/login/?redirectUrl="+URLEncoder.encode(url.toString(), "utf-8"));
+			response.sendRedirect("/user/go-login?redirectUrl="+URLEncoder.encode(url.toString(), "utf-8"));
 			return false;
 		}else{
 			return true;
