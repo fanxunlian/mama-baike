@@ -1,25 +1,17 @@
 package com.mama.baike.entity.user;
 
+import com.mama.baike.entity.page.PageQuery;
+
 import java.util.Date;
 
-public class UserEntity {
-    private int id;
+public class UserQuery  extends PageQuery {
     private String userName;
     private String userPass;
     private String nickName;
     private String userType;
     private String mobile;
-    private String userSalt;
     private Date createTime;
     private Date updateTime;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getUserName() {
         return userName;
@@ -59,14 +51,6 @@ public class UserEntity {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
-    }
-
-    public String getUserSalt() {
-        return userSalt;
-    }
-
-    public void setUserSalt(String userSalt) {
-        this.userSalt = userSalt;
     }
 
     public Date getCreateTime() {

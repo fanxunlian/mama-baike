@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mama.baike.dao.user.UserDao">
+
+    <resultMap id="BaseResultMap" type="com.mama.baike.entity.user.UserEntity">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="nick_name" jdbcType="INTEGER" property="nickName" />
+        <result column="user_type" jdbcType="VARCHAR" property="userType" />
+        <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    </resultMap>
+
+    <select id="queryObject" resultMap="BaseResultMap"
+            parameterType="com.mama.baike.entity.user.UserQuery">
+
+        select * from u_user c where 1=1
+        <if test="userName != null">
+            AND c.user_name = #{userName}
+        </if>
+        <if test="userPass != null">
+            AND c.user_pass = #{userPass}
+        </if>
+        <if test="userType != null">
+            AND c.user_type = #{userType}
+        </if>
+        <if test="mobile != null">
+            AND c.mobile = #{mobile}
+        </if>
+        <if test="mobile != null">
+            AND c.mobile = #{mobile}
+        </if>
+    </select>
+    <select id="queryList" resultMap="BaseResultMap"
+            parameterType="com.mama.baike.entity.user.UserQuery">
+
+        select * from u_user c where 1=1
+        <if test="userName != null">
+            AND c.user_name = #{userName}
+        </if>
+        <if test="userPass != null">
+            AND c.user_pass = #{userPass}
+        </if>
+        <if test="userType != null">
+            AND c.user_type = #{userType}
+        </if>
+        <if test="mobile != null">
+            AND c.mobile = #{mobile}
+        </if>
+        <if test="mobile != null">
+            AND c.mobile = #{mobile}
+        </if>
+    </select>
+
+</mapper>

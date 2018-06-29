@@ -1,12 +1,12 @@
 $(".login-btn").click(function(){
     var userName = $("#username").val();
     var userPass = $("#userpass").val();
-    var data = {"mobile":userName,"verifyCode":userPass};
+    var data = {"userName":userName,"userPass":userPass};
     console.log(data);
     $.ajax(
         {
             type: "post",
-            url: "/api/user/login",
+            url: "/api/user/login-by-pass",
             dataType: "json",
             data: data,
             success: function (res) {
@@ -14,11 +14,13 @@ $(".login-btn").click(function(){
                 }
                 if (res['code'] == 200) {
                     console.log("登录成功");
-                    window.location.href = "/index.html";
+                    window.location.href = "/";
                 } else{
+                    alert(res['message']);
 
                 }
             }
         }
     );
 });
+
