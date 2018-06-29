@@ -40,9 +40,7 @@ public class UserController {
      */
     @RequestMapping("/account")
     public ModelAndView accountInfo(@LoginUser UserEntity user) {
-        ModelAndView mav = new ModelAndView();
-        mav.setViewName("redirect:/user/login");
-        mav.addObject("redirectUrl", "/user/account");
+        ModelAndView mav = new ModelAndView("web/user/account");
         mav.addObject("isLogined", true);
         return mav;
     }
