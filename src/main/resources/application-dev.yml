@@ -19,6 +19,10 @@ spring:
       testOnBorrow: true
       testOnReturn: true
 
+  data:
+      mongodb:
+          uri: mongodb://localhost:27017/mama
+
 server:
   port: 6395
   session:

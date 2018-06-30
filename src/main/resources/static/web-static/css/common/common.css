@@ -6,7 +6,12 @@ a:active{color:#400040;text-decoration:none /*无下划线*/}
 
 .clearfix{display:block;zoom:1}
 
-
+.mama-top-bar
+{
+    width: 100%;
+    height: 30px;
+    background-color: #f8f8f8;
+}
 body{
 
     margin: 0px auto;

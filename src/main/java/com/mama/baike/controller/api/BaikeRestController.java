@@ -1,5 +1,6 @@
 package com.mama.baike.controller.api;
 
+import com.mama.baike.annotation.AuthIgnore;
 import com.mama.baike.annotation.LoginUser;
 import com.mama.baike.common.ResultBody;
 import com.mama.baike.entity.catalog.CatalogEntity;
@@ -27,14 +28,12 @@ public class BaikeRestController {
      * 目录查询
      * @return
      */
+    @AuthIgnore
     @RequestMapping("/catalog/index")
-    public ResultBody indexCatalog(@RequestBody CatalogQuery catalogQuery,@LoginUser UserEntity userEntity,HttpServletRequest request)
+    public ResultBody indexCatalog(@RequestBody CatalogQuery catalogQuery)
     {
-        HttpSession session = request.getSession();
-        System.out.println(session.getId());
-
-        List<CatalogEntity> catalogEntities =  catalogService.findCatalog(catalogQuery);
         ResultBody resultBody = new ResultBody();
+        List<CatalogEntity> catalogEntities =  catalogService.findCatalog(catalogQuery);
         resultBody.setData(catalogEntities);
         return resultBody;
     }

@@ -16,21 +16,24 @@
     <select id="queryObject" resultMap="BaseResultMap"
             parameterType="com.mama.baike.entity.user.UserQuery">
 
-        select * from u_user c where 1=1
+        select * from u_user u where 1=1
+        <if test="id != null">
+            AND u.id = #{id}
+        </if>
         <if test="userName != null">
-            AND c.user_name = #{userName}
+            AND u.user_name = #{userName}
         </if>
         <if test="userPass != null">
-            AND c.user_pass = #{userPass}
+            AND u.user_pass = #{userPass}
         </if>
         <if test="userType != null">
-            AND c.user_type = #{userType}
+            AND u.user_type = #{userType}
         </if>
         <if test="mobile != null">
-            AND c.mobile = #{mobile}
+            AND u.mobile = #{mobile}
         </if>
         <if test="mobile != null">
-            AND c.mobile = #{mobile}
+            AND u.mobile = #{mobile}
         </if>
     </select>
     <select id="queryList" resultMap="BaseResultMap"

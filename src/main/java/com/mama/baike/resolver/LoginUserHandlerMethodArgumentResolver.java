@@ -4,8 +4,11 @@ package com.mama.baike.resolver;
 import com.mama.baike.annotation.LoginUser;
 import com.mama.baike.common.constants.WebMvcConstant;
 import com.mama.baike.entity.user.UserEntity;
+import com.mama.baike.entity.user.UserQuery;
+import com.mama.baike.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.support.WebDataBinderFactory;
@@ -25,6 +28,8 @@ public class LoginUserHandlerMethodArgumentResolver implements HandlerMethodArgu
 
     private static final Logger LOGGER = LoggerFactory.getLogger(LoginUserHandlerMethodArgumentResolver.class);
 
+    @Autowired
+    private UserService userService;
 
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
@@ -53,11 +58,9 @@ public class LoginUserHandlerMethodArgumentResolver implements HandlerMethodArgu
         }
 
         //获取用户信息
-        UserEntity userEntity = new UserEntity();
-        userEntity.setId(0);
-        userEntity.setUserName("fanxunlian");
-        userEntity.setUserPass("fanxunlian");
-
+        UserQuery userQuery = new UserQuery();
+        userQuery.setId((Integer) loginUserId);
+        UserEntity userEntity = userService.findUser(userQuery);
         return userEntity;
     }
 }

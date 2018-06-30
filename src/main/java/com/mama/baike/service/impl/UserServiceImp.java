@@ -15,7 +15,13 @@ public class UserServiceImp implements UserService {
     /**
      * 登录
      */
-    public UserEntity login(UserQuery userQuery)
+    public UserEntity login(UserQuery userQuery) {
+        return userDao.queryObject(userQuery);
+    }
+    /**
+     * 查询用户
+     */
+    public UserEntity findUser(UserQuery userQuery)
     {
         return userDao.queryObject(userQuery);
     }
