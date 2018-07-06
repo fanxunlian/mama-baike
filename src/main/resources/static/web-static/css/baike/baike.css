@@ -200,8 +200,7 @@
 {
     margin: 0 auto;
     width: 1000px;
-    height: auto;
-    min-height: 500px;
+    min-height: 550px;
 }
 .baike-content .article .left{
     float: left;
@@ -326,13 +325,6 @@
     margin: 5px auto;
     background-color: #f4fdff;
 }
-.baike-content .mid-title
-{
-    margin: 50px auto;
-    width: 1000px;
-    height: 50px;
-    background-color: #f4f8fb;
-}
 
 .baike-content .article .mid .top-title
 {
@@ -422,4 +414,54 @@
     color: #84b2ce;
     font-size: 12px;
     line-height: 20px;
+}
+
+.baike-content .mid-title
+{
+    margin: 10px auto;
+    width: 1000px;
+    height: 50px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #f4f8fb;
+    line-height: 50px;
+}
+
+.baike-content .big-baike
+{
+
+
+    margin: 10px auto;
+    width: 1000px;
+    height: 540px;
+
+    /*border-right: 1px solid #f4f8fb;
+    border-bottom:  1px solid #f4f8fb;*/
+}
+.baike-content .block-baike-left
+{
+    float: left;
+    width: 499px;
+    height: 250px;
+    border-right: 1px solid rgba(215, 212, 213, 1);
+    border-bottom:  1px solid rgba(215, 212, 213, 1);
+
+}
+.baike-content .block-baike-right
+{
+    float: left;
+    width: 499px;
+    height: 250px;
+    border-bottom:  1px solid rgba(215, 212, 213, 1);
+}
+
+.baike-content .more{
+    margin: 20px auto;
+    width: 1000px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+
 }
