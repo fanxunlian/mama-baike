@@ -13280,3 +13280,846 @@ org.xml.sax.SAXParseException: The element type "link" must be terminated by the
 2018-06-29 17:11:22.578 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
 2018-06-29 17:11:22.578 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - args=null
 2018-06-29 17:11:22.578 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:15:07.577 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-06-29 17:15:07.695 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a: startup date [Fri Jun 29 17:15:07 CST 2018]; root of context hierarchy
+2018-06-29 17:15:08.142 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:15:08.213 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$43a70fb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:15:09.531 [main] INFO  com.mama.baike.BaikeApplication - The following profiles are active: dev
+2018-06-29 17:15:09.608 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6642dc5a: startup date [Fri Jun 29 17:15:09 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a
+2018-06-29 17:15:13.666 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=84954251-27da-38f7-8ab9-e3589b930ac4
+2018-06-29 17:15:13.701 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:15:13.988 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$278d0cb3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:15:14.219 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$59b9b2f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:15:14.249 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$43a70fb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:15:14.948 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 6395 (http)
+2018-06-29 17:15:14.964 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-29 17:15:14.966 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-06-29 17:15:15.230 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-29 17:15:15.231 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5623 ms
+2018-06-29 17:15:15.825 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-29 17:15:15.828 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-06-29 17:15:15.836 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-06-29 17:15:15.837 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 17:15:15.838 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 17:15:15.838 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 17:15:15.838 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 17:15:15.838 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-06-29 17:15:15.839 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-29 17:15:15.839 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-06-29 17:15:18.131 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:15:18.131 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:15:18.137 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:15:18.137 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:15:18.810 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6642dc5a: startup date [Fri Jun 29 17:15:09 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a
+2018-06-29 17:15:19.005 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/baike/catalog/index]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.BaikeRestController.indexCatalog(com.mama.baike.entity.catalog.CatalogQuery,com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-06-29 17:15:19.008 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/user/login]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.UserRestController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2018-06-29 17:15:19.008 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.HomeController.index(com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest) throws java.text.ParseException
+2018-06-29 17:15:19.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/go-login]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.loginView(com.mama.baike.entity.user.UserEntity,java.lang.String)
+2018-06-29 17:15:19.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/account]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.accountInfo(com.mama.baike.entity.user.UserEntity)
+2018-06-29 17:15:19.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 17:15:19.014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 17:15:19.135 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:15:19.135 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:15:19.256 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:15:21.077 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-06-29 17:15:21.078 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:15:21.078 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.079 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.080 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:15:21.080 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-06-29 17:15:21.081 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-06-29 17:15:21.082 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.085 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.087 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-06-29 17:15:21.087 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.088 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-06-29 17:15:21.089 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.090 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:15:21.092 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.095 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-06-29 17:15:21.097 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-06-29 17:15:21.097 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:15:21.098 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.099 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.100 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-06-29 17:15:21.101 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.101 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.102 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:15:21.102 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:15:21.324 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-06-29 17:15:22.534 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:15:22.537 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-06-29 17:15:22.537 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 17:15:22.549 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-06-29 17:15:22.554 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-06-29 17:15:22.555 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:15:22.555 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:15:22.557 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-06-29 17:15:22.562 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-06-29 17:15:22.583 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-06-29 17:15:22.599 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-06-29 17:15:22.620 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6642dc5a,type=ConfigurationPropertiesRebinder]
+2018-06-29 17:15:22.631 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-06-29 17:15:22.634 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-06-29 17:15:22.637 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-06-29 17:15:22.637 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:15:23.190 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-06-29 17:15:23.193 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-06-29 17:15:23.204 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-06-29 17:15:23.218 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-06-29 17:15:23.221 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-06-29 17:15:23.225 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-06-29 17:15:23.230 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-06-29 17:15:23.234 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-06-29 17:15:23.239 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-06-29 17:15:23.244 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-06-29 17:15:23.254 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-06-29 17:15:23.257 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-06-29 17:15:23.260 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-06-29 17:15:23.263 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-06-29 17:15:23.266 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-06-29 17:15:23.302 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:15:23.319 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:15:23.337 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-29 17:15:23.369 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 6395 (http)
+2018-06-29 17:15:23.376 [main] INFO  com.mama.baike.BaikeApplication - Started BaikeApplication in 17.624 seconds (JVM running for 22.992)
+2018-06-29 17:15:23.946 [RMI TCP Connection(9)-10.167.41.140] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2018-06-29 17:15:23.951 [RMI TCP Connection(9)-10.167.41.140] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-06-29 17:15:24.225 [RMI TCP Connection(9)-10.167.41.140] INFO  jdbc.sqltiming - SELECT 1 
+ {executed in 2 msec}
+2018-06-29 17:15:35.412 [http-nio-6395-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [tid:1530235938908448}; Hm_lvt_95e6078321231f37dff88852edfacc3f=1529982451,1530148070,1530156238,1530235939; MEIQIA_VISIT_ID=16feAeaev9ohRZnFZmmyUg3Jaar; SESSION=e146886a-6608-4769-9651-1f36e86255f1; Hm_lpvt_95e6078321231f37dff88852edfacc3f=1530236988; JSESSIONID=6A3B66044DAAD1A9FC4C58F3ED2581F0] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-06-29 17:15:35.427 [http-nio-6395-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 17:15:35.428 [http-nio-6395-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 17:15:35.470 [http-nio-6395-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2018-06-29 17:15:35.543 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:15:35.543 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:15:35.543 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:15:35.547 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:15:35.547 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:15:35.551 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:15:35.602 [http-nio-6395-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-06-29 17:15:35.679 [http-nio-6395-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-06-29 17:15:35.680 [http-nio-6395-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-06-29 17:15:35.680 [http-nio-6395-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-06-29 17:15:35.680 [http-nio-6395-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-06-29 17:15:35.687 [http-nio-6395-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-06-29 17:15:35.687 [http-nio-6395-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-06-29 17:15:39.305 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:15:39.305 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:15:39.305 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:15:39.305 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:15:39.305 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:15:39.306 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:15:40.296 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:15:40.296 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:15:40.296 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:15:40.297 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:15:40.297 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:15:40.297 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:15:44.177 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/
+2018-06-29 17:15:44.178 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:15:44.178 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:15:44.178 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.HomeController.index
+2018-06-29 17:15:44.178 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:15:44.182 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/home/index'; model is {redirect=/index, hometitle=你好}
+2018-06-29 17:15:51.733 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:15:51.733 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:15:51.733 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:15:51.733 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:15:51.733 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:15:51.734 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:17:40.438 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a: startup date [Fri Jun 29 17:17:40 CST 2018]; root of context hierarchy
+2018-06-29 17:17:40.436 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-06-29 17:17:40.947 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:17:41.018 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ac1d935d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:17:44.267 [main] INFO  com.mama.baike.BaikeApplication - The following profiles are active: dev
+2018-06-29 17:17:44.339 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31edeac: startup date [Fri Jun 29 17:17:44 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a
+2018-06-29 17:17:46.457 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=84954251-27da-38f7-8ab9-e3589b930ac4
+2018-06-29 17:17:46.496 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:17:46.825 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90039060] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:17:47.310 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$c23036a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:17:47.352 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ac1d935d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:17:48.209 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 6395 (http)
+2018-06-29 17:17:48.225 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-29 17:17:48.226 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-06-29 17:17:48.495 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-29 17:17:48.496 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4157 ms
+2018-06-29 17:17:49.555 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-29 17:17:49.562 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-06-29 17:17:49.585 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-06-29 17:17:49.588 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 17:17:49.590 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 17:17:49.591 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 17:17:49.592 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 17:17:49.593 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-06-29 17:17:49.595 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-29 17:17:49.596 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-06-29 17:17:53.865 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:17:53.865 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:17:53.872 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:17:53.872 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:17:54.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31edeac: startup date [Fri Jun 29 17:17:44 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a
+2018-06-29 17:17:54.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/baike/catalog/index]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.BaikeRestController.indexCatalog(com.mama.baike.entity.catalog.CatalogQuery,com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-06-29 17:17:54.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/user/login]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.UserRestController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2018-06-29 17:17:54.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.HomeController.index(com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest) throws java.text.ParseException
+2018-06-29 17:17:54.767 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/go-login]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.loginView(com.mama.baike.entity.user.UserEntity,java.lang.String)
+2018-06-29 17:17:54.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/account]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.accountInfo(com.mama.baike.entity.user.UserEntity)
+2018-06-29 17:17:54.771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 17:17:54.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 17:17:54.899 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:17:54.899 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:17:55.017 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:17:56.985 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-06-29 17:17:56.986 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:17:56.987 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-06-29 17:17:56.989 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:56.990 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:56.992 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-06-29 17:17:56.993 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:56.994 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:56.998 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-06-29 17:17:56.998 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:56.999 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:17:57.000 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-06-29 17:17:57.003 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-06-29 17:17:57.004 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:57.005 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:17:57.007 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:57.008 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:17:57.009 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:57.012 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-06-29 17:17:57.013 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:17:57.013 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:57.016 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-06-29 17:17:57.017 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:57.018 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:57.019 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:17:57.253 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-06-29 17:17:58.426 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:17:58.429 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-06-29 17:17:58.429 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 17:17:58.441 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-06-29 17:17:58.446 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-06-29 17:17:58.446 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:17:58.447 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:17:58.448 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-06-29 17:17:58.451 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-06-29 17:17:58.468 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-06-29 17:17:58.486 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-06-29 17:17:58.505 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=31edeac,type=ConfigurationPropertiesRebinder]
+2018-06-29 17:17:58.514 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-06-29 17:17:58.517 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-06-29 17:17:58.519 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-06-29 17:17:58.520 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:17:59.148 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-06-29 17:17:59.150 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-06-29 17:17:59.159 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-06-29 17:17:59.172 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-06-29 17:17:59.176 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-06-29 17:17:59.180 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-06-29 17:17:59.183 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-06-29 17:17:59.186 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-06-29 17:17:59.190 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-06-29 17:17:59.194 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-06-29 17:17:59.202 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-06-29 17:17:59.207 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-06-29 17:17:59.210 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-06-29 17:17:59.213 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-06-29 17:17:59.217 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-06-29 17:17:59.251 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:17:59.270 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:17:59.292 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-29 17:17:59.326 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 6395 (http)
+2018-06-29 17:17:59.334 [main] INFO  com.mama.baike.BaikeApplication - Started BaikeApplication in 21.257 seconds (JVM running for 26.308)
+2018-06-29 17:18:00.108 [RMI TCP Connection(3)-10.167.41.140] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2018-06-29 17:18:00.116 [RMI TCP Connection(3)-10.167.41.140] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-06-29 17:18:00.455 [RMI TCP Connection(3)-10.167.41.140] INFO  jdbc.sqltiming - SELECT 1 
+ {executed in 2 msec}
+2018-06-29 17:18:05.992 [http-nio-6395-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [tid:1530235938908448}; Hm_lvt_95e6078321231f37dff88852edfacc3f=1529982451,1530148070,1530156238,1530235939; MEIQIA_VISIT_ID=16feAeaev9ohRZnFZmmyUg3Jaar; SESSION=e146886a-6608-4769-9651-1f36e86255f1; Hm_lpvt_95e6078321231f37dff88852edfacc3f=1530236988; JSESSIONID=6E52BCA069419CF55A24A133292734A1] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-06-29 17:18:06.008 [http-nio-6395-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 17:18:06.009 [http-nio-6395-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 17:18:06.053 [http-nio-6395-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-06-29 17:18:06.129 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:18:06.129 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:18:06.130 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:18:06.134 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:18:06.134 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:18:06.138 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:18:06.190 [http-nio-6395-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-06-29 17:18:06.266 [http-nio-6395-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-06-29 17:18:06.267 [http-nio-6395-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-06-29 17:18:06.267 [http-nio-6395-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-06-29 17:18:06.267 [http-nio-6395-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-06-29 17:18:06.274 [http-nio-6395-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-06-29 17:18:06.274 [http-nio-6395-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-06-29 17:18:07.567 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:18:07.568 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:18:07.568 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:18:07.568 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:18:07.568 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:18:07.569 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:18:14.143 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:18:14.144 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:18:14.144 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:18:14.144 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:18:14.144 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:18:14.144 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:20:12.063 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a: startup date [Fri Jun 29 17:20:12 CST 2018]; root of context hierarchy
+2018-06-29 17:20:12.064 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-06-29 17:20:12.573 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:20:12.662 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a413b546] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:20:13.647 [main] INFO  com.mama.baike.BaikeApplication - The following profiles are active: dev
+2018-06-29 17:20:13.673 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d27d9d: startup date [Fri Jun 29 17:20:13 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a
+2018-06-29 17:20:16.492 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=84954251-27da-38f7-8ab9-e3589b930ac4
+2018-06-29 17:20:16.726 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:20:18.627 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$87f9b249] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:20:18.889 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$ba26588a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:20:18.920 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a413b546] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:20:19.671 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 6395 (http)
+2018-06-29 17:20:19.690 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-29 17:20:19.692 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-06-29 17:20:19.966 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-29 17:20:19.967 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6294 ms
+2018-06-29 17:20:20.621 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-29 17:20:20.624 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-06-29 17:20:20.632 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-06-29 17:20:20.633 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 17:20:20.633 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 17:20:20.633 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 17:20:20.633 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 17:20:20.634 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-06-29 17:20:20.634 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-29 17:20:20.634 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-06-29 17:20:22.911 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:20:22.912 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:20:22.919 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:20:22.920 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:20:23.797 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d27d9d: startup date [Fri Jun 29 17:20:13 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a
+2018-06-29 17:20:24.589 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/baike/catalog/index]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.BaikeRestController.indexCatalog(com.mama.baike.entity.catalog.CatalogQuery,com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-06-29 17:20:24.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/user/login]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.UserRestController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2018-06-29 17:20:24.600 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.HomeController.index(com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest) throws java.text.ParseException
+2018-06-29 17:20:24.604 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/go-login]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.loginView(com.mama.baike.entity.user.UserEntity,java.lang.String)
+2018-06-29 17:20:24.606 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/account]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.accountInfo(com.mama.baike.entity.user.UserEntity)
+2018-06-29 17:20:24.618 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 17:20:24.621 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 17:20:25.450 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:20:25.451 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:20:25.995 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:20:28.278 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-06-29 17:20:28.281 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.283 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-06-29 17:20:28.284 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.285 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.287 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-06-29 17:20:28.290 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.291 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-06-29 17:20:28.292 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.293 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:20:28.293 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.297 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:20:28.299 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.300 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:20:28.301 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-06-29 17:20:28.302 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.302 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.305 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-06-29 17:20:28.306 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:20:28.306 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.306 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.307 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:20:28.307 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-06-29 17:20:28.309 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-06-29 17:20:28.310 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:20:28.549 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-06-29 17:20:29.816 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:20:29.819 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-06-29 17:20:29.819 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 17:20:29.833 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-06-29 17:20:29.841 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-06-29 17:20:29.841 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:20:29.842 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:20:29.843 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-06-29 17:20:29.847 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-06-29 17:20:29.866 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-06-29 17:20:29.883 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-06-29 17:20:29.905 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4d27d9d,type=ConfigurationPropertiesRebinder]
+2018-06-29 17:20:29.916 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-06-29 17:20:29.920 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-06-29 17:20:29.923 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-06-29 17:20:29.924 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:20:30.504 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-06-29 17:20:30.508 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-06-29 17:20:30.521 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-06-29 17:20:30.542 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-06-29 17:20:30.548 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-06-29 17:20:30.554 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-06-29 17:20:30.558 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-06-29 17:20:30.563 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-06-29 17:20:30.568 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-06-29 17:20:30.573 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-06-29 17:20:30.584 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-06-29 17:20:30.588 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-06-29 17:20:30.593 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-06-29 17:20:30.596 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-06-29 17:20:30.604 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-06-29 17:20:30.668 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:20:30.719 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:20:30.752 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-29 17:20:30.890 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 6395 (http)
+2018-06-29 17:20:30.898 [main] INFO  com.mama.baike.BaikeApplication - Started BaikeApplication in 23.805 seconds (JVM running for 26.214)
+2018-06-29 17:20:31.708 [RMI TCP Connection(10)-10.167.41.140] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2018-06-29 17:20:31.715 [RMI TCP Connection(10)-10.167.41.140] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-06-29 17:20:32.356 [RMI TCP Connection(10)-10.167.41.140] INFO  jdbc.sqltiming - SELECT 1 
+ {executed in 7 msec}
+2018-06-29 17:20:39.636 [http-nio-6395-exec-4] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [tid:1530235938908448}; Hm_lvt_95e6078321231f37dff88852edfacc3f=1529982451,1530148070,1530156238,1530235939; MEIQIA_VISIT_ID=16feAeaev9ohRZnFZmmyUg3Jaar; SESSION=e146886a-6608-4769-9651-1f36e86255f1; Hm_lpvt_95e6078321231f37dff88852edfacc3f=1530236988; JSESSIONID=6E52BCA069419CF55A24A133292734A1] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-06-29 17:20:39.648 [http-nio-6395-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 17:20:39.648 [http-nio-6395-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 17:20:39.694 [http-nio-6395-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+2018-06-29 17:20:39.766 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:20:39.766 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:20:39.766 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:20:39.770 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:20:39.771 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:20:39.775 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:20:39.826 [http-nio-6395-exec-4] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-06-29 17:20:39.909 [http-nio-6395-exec-4] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-06-29 17:20:39.909 [http-nio-6395-exec-4] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-06-29 17:20:39.910 [http-nio-6395-exec-4] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-06-29 17:20:39.910 [http-nio-6395-exec-4] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-06-29 17:20:39.917 [http-nio-6395-exec-4] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-06-29 17:20:39.918 [http-nio-6395-exec-4] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-06-29 17:20:48.496 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:20:48.496 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:20:48.496 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:20:48.496 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:20:48.496 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:20:48.499 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:20:52.367 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/api/user/login
+2018-06-29 17:20:52.367 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - method=POST
+2018-06-29 17:20:52.367 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:20:52.367 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.api.UserRestController.login
+2018-06-29 17:20:52.367 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - args=org.apache.catalina.connector.RequestFacade@43b3d711
+2018-06-29 17:20:52.371 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - response=com.mama.baike.common.ResultBody@76daf02f
+2018-06-29 17:20:52.437 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/index.html
+2018-06-29 17:20:52.437 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:20:52.437 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:20:52.437 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.HomeController.index
+2018-06-29 17:20:52.438 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@de2bff3
+2018-06-29 17:20:52.442 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/home/index'; model is {redirect=/index, hometitle=你好}
+2018-06-29 17:21:39.992 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:21:39.992 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:21:39.992 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:21:39.993 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:21:39.993 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@4188e184
+2018-06-29 17:22:29.101 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'redirect:/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:22:45.688 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-06-29 17:22:45.700 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@47a5b70d: startup date [Fri Jun 29 17:22:45 CST 2018]; root of context hierarchy
+2018-06-29 17:22:46.407 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:22:46.669 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$222c1284] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:22:49.563 [main] INFO  com.mama.baike.BaikeApplication - The following profiles are active: dev
+2018-06-29 17:22:49.583 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a03d65c: startup date [Fri Jun 29 17:22:49 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@47a5b70d
+2018-06-29 17:22:51.563 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=84954251-27da-38f7-8ab9-e3589b930ac4
+2018-06-29 17:22:51.600 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:22:51.880 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6120f87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:22:52.132 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$383eb5c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:22:52.159 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$222c1284] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:22:52.857 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 6395 (http)
+2018-06-29 17:22:52.872 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-29 17:22:52.874 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-06-29 17:22:53.155 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-29 17:22:53.156 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3573 ms
+2018-06-29 17:22:53.751 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-29 17:22:53.753 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-06-29 17:22:53.759 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-06-29 17:22:53.760 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 17:22:53.761 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 17:22:53.761 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 17:22:53.761 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 17:22:53.761 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-06-29 17:22:53.762 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-29 17:22:53.762 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-06-29 17:22:56.030 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:22:56.030 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:22:56.036 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:22:56.036 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:22:56.715 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a03d65c: startup date [Fri Jun 29 17:22:49 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@47a5b70d
+2018-06-29 17:22:56.911 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/baike/catalog/index]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.BaikeRestController.indexCatalog(com.mama.baike.entity.catalog.CatalogQuery,com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-06-29 17:22:56.914 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/user/login]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.UserRestController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2018-06-29 17:22:56.915 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.HomeController.index(com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest) throws java.text.ParseException
+2018-06-29 17:22:56.917 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/go-login]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.loginView(com.mama.baike.entity.user.UserEntity,java.lang.String)
+2018-06-29 17:22:56.917 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/account]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.accountInfo(com.mama.baike.entity.user.UserEntity)
+2018-06-29 17:22:56.920 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 17:22:56.921 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 17:22:57.142 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:22:57.143 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:22:57.577 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:23:01.417 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-06-29 17:23:01.418 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:23:01.419 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.420 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.421 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.425 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.426 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-06-29 17:23:01.427 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.428 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.428 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.430 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-06-29 17:23:01.432 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-06-29 17:23:01.434 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-06-29 17:23:01.436 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-06-29 17:23:01.437 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.437 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.439 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-06-29 17:23:01.439 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.440 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:23:01.441 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-06-29 17:23:01.443 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:23:01.444 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:23:01.445 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.446 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:23:01.446 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:23:01.686 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-06-29 17:23:03.003 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:23:03.007 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-06-29 17:23:03.007 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 17:23:03.021 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-06-29 17:23:03.028 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-06-29 17:23:03.029 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:23:03.030 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:23:03.032 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-06-29 17:23:03.037 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-06-29 17:23:03.059 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-06-29 17:23:03.076 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-06-29 17:23:03.100 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=2a03d65c,type=ConfigurationPropertiesRebinder]
+2018-06-29 17:23:03.109 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-06-29 17:23:03.115 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-06-29 17:23:03.119 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-06-29 17:23:03.120 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:23:03.779 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-06-29 17:23:03.782 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-06-29 17:23:03.794 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-06-29 17:23:03.810 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-06-29 17:23:03.814 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-06-29 17:23:03.818 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-06-29 17:23:03.821 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-06-29 17:23:03.825 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-06-29 17:23:03.828 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-06-29 17:23:03.832 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-06-29 17:23:03.840 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-06-29 17:23:03.845 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-06-29 17:23:03.848 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-06-29 17:23:03.851 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-06-29 17:23:03.854 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-06-29 17:23:03.887 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:23:03.907 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:23:03.932 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-29 17:23:03.967 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 6395 (http)
+2018-06-29 17:23:03.975 [main] INFO  com.mama.baike.BaikeApplication - Started BaikeApplication in 21.124 seconds (JVM running for 25.746)
+2018-06-29 17:23:04.799 [RMI TCP Connection(5)-10.167.41.140] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2018-06-29 17:23:04.804 [RMI TCP Connection(5)-10.167.41.140] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-06-29 17:23:05.069 [RMI TCP Connection(5)-10.167.41.140] INFO  jdbc.sqltiming - SELECT 1 
+ {executed in 2 msec}
+2018-06-29 17:23:16.212 [http-nio-6395-exec-7] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [tid:1530235938908448}; Hm_lvt_95e6078321231f37dff88852edfacc3f=1529982451,1530148070,1530156238,1530235939; MEIQIA_VISIT_ID=16feAeaev9ohRZnFZmmyUg3Jaar; SESSION=e146886a-6608-4769-9651-1f36e86255f1; Hm_lpvt_95e6078321231f37dff88852edfacc3f=1530236988; JSESSIONID=2D11BE6B299CE1C300D4A19575EFBC40] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-06-29 17:23:16.227 [http-nio-6395-exec-7] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 17:23:16.228 [http-nio-6395-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 17:23:16.272 [http-nio-6395-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-06-29 17:23:42.821 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:23:42.822 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:23:42.822 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:23:42.824 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:23:42.824 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:23:42.828 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:23:42.884 [http-nio-6395-exec-5] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-06-29 17:23:42.962 [http-nio-6395-exec-5] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-06-29 17:23:42.963 [http-nio-6395-exec-5] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-06-29 17:23:42.963 [http-nio-6395-exec-5] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-06-29 17:23:42.963 [http-nio-6395-exec-5] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-06-29 17:23:42.968 [http-nio-6395-exec-5] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-06-29 17:23:42.969 [http-nio-6395-exec-5] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-06-29 17:23:53.317 [http-nio-6395-exec-8] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/api/user/login
+2018-06-29 17:23:53.317 [http-nio-6395-exec-8] INFO  com.mama.baike.common.aop.HttpAspect - method=POST
+2018-06-29 17:23:53.317 [http-nio-6395-exec-8] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:23:53.317 [http-nio-6395-exec-8] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.api.UserRestController.login
+2018-06-29 17:23:53.317 [http-nio-6395-exec-8] INFO  com.mama.baike.common.aop.HttpAspect - args=org.apache.catalina.connector.RequestFacade@6fe89480
+2018-06-29 17:23:53.322 [http-nio-6395-exec-8] INFO  com.mama.baike.common.aop.HttpAspect - response=com.mama.baike.common.ResultBody@3a01f8f7
+2018-06-29 17:23:53.381 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/index.html
+2018-06-29 17:23:53.381 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:23:53.381 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:23:53.381 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.HomeController.index
+2018-06-29 17:23:53.381 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@abf11c3
+2018-06-29 17:23:53.388 [http-nio-6395-exec-9] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/home/index'; model is {redirect=/index, hometitle=你好}
+2018-06-29 17:24:03.542 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:24:03.542 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:24:03.542 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:24:03.542 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:24:03.542 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@20e9f698
+2018-06-29 17:24:03.544 [http-nio-6395-exec-10] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/account'; model is {isLogined=true}
+2018-06-29 17:24:21.378 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:24:21.379 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:24:21.379 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:24:21.379 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:24:21.379 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@1b8f3749
+2018-06-29 17:27:14.010 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/account'; model is {isLogined=true}
+2018-06-29 17:27:25.421 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a: startup date [Fri Jun 29 17:27:25 CST 2018]; root of context hierarchy
+2018-06-29 17:27:25.581 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-06-29 17:27:27.221 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:27:27.453 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4a112dff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:27:29.306 [main] INFO  com.mama.baike.BaikeApplication - The following profiles are active: dev
+2018-06-29 17:27:29.331 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63bde6c2: startup date [Fri Jun 29 17:27:29 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a
+2018-06-29 17:27:31.417 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=84954251-27da-38f7-8ab9-e3589b930ac4
+2018-06-29 17:27:31.453 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-29 17:27:31.780 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2df72b02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:27:32.062 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$6023d143] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:27:32.098 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4a112dff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 17:27:32.840 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 6395 (http)
+2018-06-29 17:27:32.859 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-29 17:27:32.861 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-06-29 17:27:33.184 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-29 17:27:33.185 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3854 ms
+2018-06-29 17:27:34.144 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-29 17:27:34.147 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-06-29 17:27:34.154 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-06-29 17:27:34.155 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 17:27:34.156 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 17:27:34.156 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 17:27:34.156 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 17:27:34.156 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-06-29 17:27:34.157 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-29 17:27:34.158 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-06-29 17:27:39.322 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:27:39.323 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:27:39.331 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-06-29 17:27:39.331 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-29 17:27:41.673 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63bde6c2: startup date [Fri Jun 29 17:27:29 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5286c33a
+2018-06-29 17:27:42.015 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/baike/catalog/index]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.BaikeRestController.indexCatalog(com.mama.baike.entity.catalog.CatalogQuery,com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-06-29 17:27:42.018 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/user/login]}" onto public com.mama.baike.common.ResultBody com.mama.baike.controller.api.UserRestController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2018-06-29 17:27:42.019 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.HomeController.index(com.mama.baike.entity.user.UserEntity,javax.servlet.http.HttpServletRequest) throws java.text.ParseException
+2018-06-29 17:27:42.021 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/go-login]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.loginView(com.mama.baike.entity.user.UserEntity,java.lang.String)
+2018-06-29 17:27:42.021 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/account]}" onto public org.springframework.web.servlet.ModelAndView com.mama.baike.controller.UserController.accountInfo(com.mama.baike.entity.user.UserEntity)
+2018-06-29 17:27:42.026 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 17:27:42.028 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 17:27:42.666 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:27:42.668 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:27:43.417 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 17:27:48.383 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-06-29 17:27:48.385 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.386 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.387 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.387 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:27:48.388 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:27:48.389 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-06-29 17:27:48.389 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.392 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.393 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-06-29 17:27:48.394 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.395 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.397 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:27:48.399 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.401 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-06-29 17:27:48.402 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-29 17:27:48.403 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.404 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-06-29 17:27:48.404 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.405 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-06-29 17:27:48.405 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.407 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-06-29 17:27:48.409 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-06-29 17:27:48.409 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-29 17:27:48.409 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-29 17:27:48.654 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-06-29 17:27:49.923 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:27:49.925 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-06-29 17:27:49.925 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 17:27:49.938 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-06-29 17:27:49.943 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-06-29 17:27:49.943 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:27:49.944 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-06-29 17:27:49.946 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-06-29 17:27:49.949 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-06-29 17:27:49.975 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-06-29 17:27:49.992 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-06-29 17:27:50.012 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=63bde6c2,type=ConfigurationPropertiesRebinder]
+2018-06-29 17:27:50.023 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-06-29 17:27:50.027 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-06-29 17:27:50.030 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-06-29 17:27:50.031 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-29 17:27:50.609 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-06-29 17:27:50.612 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-06-29 17:27:50.622 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-06-29 17:27:50.636 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-06-29 17:27:50.641 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-06-29 17:27:50.645 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-06-29 17:27:50.648 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-06-29 17:27:50.652 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-06-29 17:27:50.655 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-06-29 17:27:50.659 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-06-29 17:27:50.669 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-06-29 17:27:50.673 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-06-29 17:27:50.678 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-06-29 17:27:50.680 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-06-29 17:27:50.683 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-06-29 17:27:50.732 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:27:50.751 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6395"]
+2018-06-29 17:27:50.774 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-29 17:27:50.814 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 6395 (http)
+2018-06-29 17:27:50.821 [main] INFO  com.mama.baike.BaikeApplication - Started BaikeApplication in 27.649 seconds (JVM running for 31.579)
+2018-06-29 17:27:51.376 [RMI TCP Connection(5)-10.167.41.140] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2018-06-29 17:27:51.390 [RMI TCP Connection(5)-10.167.41.140] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-06-29 17:27:51.669 [RMI TCP Connection(5)-10.167.41.140] INFO  jdbc.sqltiming - SELECT 1 
+ {executed in 2 msec}
+2018-06-29 17:28:47.697 [http-nio-6395-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [tid:1530235938908448}; Hm_lvt_95e6078321231f37dff88852edfacc3f=1529982451,1530148070,1530156238,1530235939; MEIQIA_VISIT_ID=16feAeaev9ohRZnFZmmyUg3Jaar; SESSION=e146886a-6608-4769-9651-1f36e86255f1; Hm_lpvt_95e6078321231f37dff88852edfacc3f=1530236988; JSESSIONID=B4E0745D58F9DE460DB0EF14DF74D399] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-06-29 17:28:47.709 [http-nio-6395-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 17:28:47.709 [http-nio-6395-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 17:28:47.756 [http-nio-6395-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2018-06-29 17:28:47.881 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/go-login
+2018-06-29 17:28:47.881 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:28:47.881 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:28:47.884 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.loginView
+2018-06-29 17:28:47.885 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - args=null
+2018-06-29 17:28:47.890 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/login'; model is {redirectUrl=/user/account, isLogined=true}
+2018-06-29 17:28:48.050 [http-nio-6395-exec-3] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-06-29 17:28:48.115 [http-nio-6395-exec-3] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-06-29 17:28:48.115 [http-nio-6395-exec-3] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-06-29 17:28:48.116 [http-nio-6395-exec-3] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-06-29 17:28:48.116 [http-nio-6395-exec-3] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-06-29 17:28:48.121 [http-nio-6395-exec-3] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-06-29 17:28:48.122 [http-nio-6395-exec-3] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-06-29 17:28:59.036 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/api/user/login
+2018-06-29 17:28:59.037 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - method=POST
+2018-06-29 17:28:59.037 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:28:59.037 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.api.UserRestController.login
+2018-06-29 17:28:59.037 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - args=org.apache.catalina.connector.RequestFacade@56216903
+2018-06-29 17:28:59.044 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - response=com.mama.baike.common.ResultBody@99c09ab
+2018-06-29 17:28:59.105 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/index.html
+2018-06-29 17:28:59.105 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:28:59.105 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:28:59.106 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.HomeController.index
+2018-06-29 17:28:59.106 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@eb45cf5
+2018-06-29 17:28:59.112 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/home/index'; model is {redirect=/index, hometitle=你好}
+2018-06-29 17:29:07.062 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:29:07.063 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:29:07.063 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:29:07.063 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:29:07.063 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@3c9f4a2d
+2018-06-29 17:29:12.985 [http-nio-6395-exec-4] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/account'; model is {isLogined=true}
+2018-06-29 17:29:16.300 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:29:16.301 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:29:16.301 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:29:16.301 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:29:16.301 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@4d313304
+2018-06-29 17:29:16.301 [http-nio-6395-exec-1] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/account'; model is {isLogined=true}
+2018-06-29 17:29:17.087 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:29:17.088 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:29:17.088 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:29:17.088 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:29:17.088 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@47f785e
+2018-06-29 17:29:17.088 [http-nio-6395-exec-2] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/account'; model is {isLogined=true}
+2018-06-29 17:29:17.744 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:29:17.745 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:29:17.746 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:29:17.747 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:29:17.747 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@46b07d38
+2018-06-29 17:29:17.747 [http-nio-6395-exec-3] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/account'; model is {isLogined=true}
+2018-06-29 17:29:18.402 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:29:18.402 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:29:18.402 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:29:18.402 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:29:18.402 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@6d31371c
+2018-06-29 17:29:18.403 [http-nio-6395-exec-6] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/account'; model is {isLogined=true}
+2018-06-29 17:29:20.999 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/
+2018-06-29 17:29:20.999 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:29:20.999 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:29:21.000 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.HomeController.index
+2018-06-29 17:29:21.000 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@445a8abe
+2018-06-29 17:29:21.000 [http-nio-6395-exec-5] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/home/index'; model is {redirect=/index, hometitle=你好}
+2018-06-29 17:29:24.734 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - url=http://localhost:6395/user/account
+2018-06-29 17:29:24.736 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - method=GET
+2018-06-29 17:29:24.737 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - ip=0:0:0:0:0:0:0:1
+2018-06-29 17:29:24.737 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - class_method=com.mama.baike.controller.UserController.accountInfo
+2018-06-29 17:29:24.738 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - args=com.mama.baike.entity.user.UserEntity@4702df2b
+2018-06-29 17:29:24.738 [http-nio-6395-exec-7] INFO  com.mama.baike.common.aop.HttpAspect - response=ModelAndView: reference to view with name 'web/user/account'; model is {isLogined=true}
