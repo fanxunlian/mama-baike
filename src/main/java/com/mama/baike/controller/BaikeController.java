@@ -27,13 +27,15 @@ public class BaikeController {
     public ModelAndView baby(@LoginUser UserEntity user , CatalogQuery catalogQuery) throws ParseException {
 
         ModelAndView mav = new ModelAndView("/web/baike/baby2");
-        List<CatalogEntity> catalogEntities =  catalogService.findCatalog(catalogQuery);
-        mav.addObject("titlelist",catalogEntities);
+
+        List<CatalogEntity> catalogList =  catalogService.findCatalog(catalogQuery);
+        mav.addObject("cataloglist",catalogList);
 
         CatalogQuery catalogQueryTitle = new CatalogQuery();
-        catalogQueryTitle.setId(catalogQuery.getParentId());
-        List<CatalogEntity> catalogList =  catalogService.findCatalog(catalogQueryTitle);
-        mav.addObject("cataloglist",catalogList);
+        catalogQueryTitle.setParentId(catalogQuery.getId());
+        List<CatalogEntity> catalogEntities =  catalogService.findCatalog(catalogQueryTitle);
+        mav.addObject("titlelist",catalogEntities);
+
 
         return mav;
     }
