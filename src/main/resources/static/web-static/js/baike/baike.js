@@ -19,11 +19,10 @@ $(document).ready(function(){
     });
 
     $(".baike-sub-title .main").mouseover(function(){
-        $(".baike-sub-title .main").addClass("active")
-        $(".baike-sub-title .main").addClass("active")
+        $(".baike-sub-title .main").addClass("active");
     });
     $(".baike-sub-title .main").mouseout(function(){
-        $(".baike-sub-title .main").removeClass("active")
+        $(".baike-sub-title .main").removeClass("active");
     });
 
     $(".baike-sub-title .baby").mouseover(function(){
@@ -33,11 +32,11 @@ $(document).ready(function(){
         $(".baike-sub-title .baby").removeClass("active")
     });
 
-    $(".baike-sub-title .nutrition").mouseover(function(){
-        $(".baike-sub-title .nutrition").addClass("active")
+    $(".baike-sub-title .education").mouseover(function(){
+        $(".baike-sub-title .education").addClass("active")
     });
-    $(".baike-sub-title .nutrition").mouseout(function(){
-        $(".baike-sub-title .nutrition").removeClass("active")
+    $(".baike-sub-title .education").mouseout(function(){
+        $(".baike-sub-title .education").removeClass("active")
     });
 
     $(".baike-sub-title .disease").mouseover(function(){

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service("catalogService")
-public class CatalogServiceImpl implements CatalogService {
+public class CatalogServiceImp implements CatalogService {
 
     @Autowired
     private CatalogDao catalogDao;

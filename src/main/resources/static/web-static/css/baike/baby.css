@@ -1,0 +1,74 @@
+body
+{
+    background-color: RGB(244,258,241);
+}
+.baby-big-tiny-bar
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 30px;
+    font-size: 14px;
+}
+.baby-big-title
+{
+    width: 1000px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 3px solid RGB(98,216,218);
+}
+.baby-big-title .left{
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+.baby-big-title .left .top{
+    float: left;
+    width: 150px;
+    height: 110px;
+    background-color: white;
+
+}
+.baby-big-title .left .top img
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.baby-big-title .left .bottom{
+    float: left;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+.baby-big-title .left .bottom span
+{
+    line-height: 37px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.baby-big-title .right{
+    float: left;
+    margin-top: 10px;
+    width: 847px;
+    height: 140px;
+    background-color: white;
+}
+.baby-big-title .right li{
+    width: 190px;
+    height: 40px;
+    padding:0 10px;
+    font-size:16px;
+    line-height:40px;
+    color:#fff;
+    text-align: left;
+    list-style: disc;
+    float: left;
+}
