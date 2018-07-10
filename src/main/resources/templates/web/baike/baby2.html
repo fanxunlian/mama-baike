@@ -5,10 +5,10 @@
     <meta name="keywords" content="育儿" />
     <meta name="description" content="育儿平台" />
     <!--css-->
-    <link href="@{web-static/css/common/common.css}" type="text/css" rel="stylesheet" media="screen"/>
-    <link href="@{web-static/css/common/ad.css}" type="text/css" rel="stylesheet" media="screen"/>
-    <link href="@{web-static/css/baike/baike.css}" type="text/css" rel="stylesheet" media="screen"/>
-    <link href="@{web-static/css/baike/baby.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/common/common.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/common/ad.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/baike/baike.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/baike/baby.css}" type="text/css" rel="stylesheet" media="screen"/>
 </head>
 <body>
 <div class="mama-top-bar">
@@ -20,7 +20,7 @@
     </div>
     <div class="logo">
         <a href="#" title="妈妈网">
-            <img src="../../../static/web-static/imgs/ad/baike.png"/>
+            <img th:src="@{/web-static/imgs/ad/baike.png}"/>
         </a>
     </div>
 </div>
@@ -115,26 +115,25 @@
     <div class="baby-big-title">
         <div class="left">
             <div class="top">
-                <img src="@{web-static/imgs/ad/ad12.jpg}"/>
+                <img th:src="@{/web-static/imgs/ad/ad12.jpg}"/>
             </div>
             <div class="bottom">
                 <span>亲子</span>
             </div>
         </div>
         <div class="right">
-            <li> <a href="#"><span>备孕</span></a></li>
-            <li> <a href="#"><span>怀孕</span></a></li>
-            <li> <a href="#"><span>分娩</span></a></li>
-            <li> <a href="#"><span>月子</span></a></li>
-            <li> <a href="#"><span>新生儿</span></a></li>
+            <th:block th:each="title,iterStat:${titlelist}">
+                <li> <a href="#"><span th:text="${title.catalogName}">备孕</span></a></li>
+            </th:block>
+
         </div>
     </div>
 </div>
 
 
 
-<script type="text/javascript" src="@{web-static/js/jquery/jquery-1.7.2.min.js}"></script>
-<script type="text/javascript" src="@{web-static/js/baike/baike.js}"></script>
-<script type="text/javascript" src="@{web-static/js/baike/baby.js}"></script>
+<script type="text/javascript" th:src="@{/web-static/js/jquery/jquery-1.7.2.min.js}"></script>
+<script type="text/javascript" th:src="@{/web-static/js/baike/baike.js}"></script>
+<script type="text/javascript" th:src="@{/web-static/js/baike/baby.js}"></script>
 </body>
 </html>

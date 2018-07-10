@@ -23,23 +23,12 @@ public class BaikeController {
     private CatalogService catalogService;
 
     @AuthIgnore
-    @RequestMapping(value = "/catalog")
-    public ModelAndView index(@LoginUser UserEntity user , HttpServletRequest request) throws ParseException {
+    @RequestMapping(value = "/catalog/baby")
+    public ModelAndView baby(@LoginUser UserEntity user , CatalogQuery catalogQuery) throws ParseException {
 
-        ModelAndView mav = new ModelAndView("web/baike/baike2");
-        mav.addObject("hometitle","你好");
-        return mav;
-    }
-    @AuthIgnore
-    @RequestMapping(value = "/baby")
-    public ModelAndView baby(@LoginUser UserEntity user , HttpServletRequest request) throws ParseException {
-
-        ModelAndView mav = new ModelAndView("web/baike/baby2");
-
-        CatalogQuery catalogQuery = new CatalogQuery();
-        catalogQuery.setParentId(1);
+        ModelAndView mav = new ModelAndView("/web/baike/baby2");
         List<CatalogEntity> catalogEntities =  catalogService.findCatalog(catalogQuery);
-        mav.addObject("titlelist","你好");
+        mav.addObject("titlelist",catalogEntities);
         return mav;
     }
 }
