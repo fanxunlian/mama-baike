@@ -72,6 +72,20 @@
     width: 1000px;
     height: 200px;
 }
+.baike-sub-title .baike-sub-title-mid li{
+    width: auto;
+    height: auto;
+    padding:0 5px;
+    font-size:14px;
+    line-height:30px;
+    color:#fff;
+    text-align: center;
+    list-style: none;
+}
+.baike-sub-title .baike-sub-title-mid li a span
+{
+    color: white;
+}
 .baike-content
 {
     width: 100%;
@@ -153,51 +167,71 @@
     height: 100%;
     background-color: #47bec0;
 }
+.baike-sub-title  .left{
+
+    float: left;
+    text-align: center;
+    width: 69px;
+    height: 100%;
+}
+.baike-sub-title  .right{
+
+    float: left;
+    text-align: center;
+    width: 69px;
+    height: 100%;
+}
 .baike-sub-title .baby
 {
+    padding-top: 10px;
     float: left;
     width: 140px;
-    height: 100%;
+    height: 190px;
     background-color: #47bec0;
     border-left: 1px solid rgba(255, 255, 225, 0.2);
 }
-.baike-sub-title .nutrition
+.baike-sub-title .education
 {
+    padding-top: 10px;
     float: left;
     width: 140px;
-    height: 100%;
+    height: 190px;
     background-color: #47bec0;
     border-left: 1px solid rgba(255, 255, 225, 0.2);
 }
 .baike-sub-title .disease
 {
+    padding-top: 10px;
     float: left;
     width: 140px;
-    height: 100%;
+    height: 190px;
     background-color: #47bec0;
     border-left: 1px solid rgba(255, 255, 225, 0.2);
 }
 .baike-sub-title .life
 {
+    padding-top: 10px;
     float: left;
     width: 140px;
-    height: 100%;
+    height: 190px;
     background-color: #47bec0;
     border-left: 1px solid rgba(255, 255, 225, 0.2);
 }
 .baike-sub-title .lady
 {
+    padding-top: 10px;
     float: left;
     width: 140px;
-    height: 100%;
+    height: 190px;
     background-color: #47bec0;
     border-left: 1px solid rgba(255, 255, 225, 0.2);
 }
 .baike-sub-title .useage
 {
+    padding-top: 10px;
     float: left;
     width: 140px;
-    height: 100%;
+    height: 190px;
     background-color: #47bec0;
     border-left: 1px solid rgba(255, 255, 225, 0.2);
 }
@@ -218,8 +252,6 @@
     width: 350px;
     height: auto;
     min-height: 500px;
-
-
 }
 .baike-content .article .mid{
     float: left;

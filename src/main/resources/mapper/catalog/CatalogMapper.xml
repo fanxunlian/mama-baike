@@ -26,6 +26,9 @@
         <if test="status != null">
             AND c.status = #{status}
         </if>
+        <if test="parentId != null">
+            AND c.parent_id = #{parentId}
+        </if>
     </select>
 
 </mapper>
