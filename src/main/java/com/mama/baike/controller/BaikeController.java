@@ -29,6 +29,12 @@ public class BaikeController {
         ModelAndView mav = new ModelAndView("/web/baike/baby2");
         List<CatalogEntity> catalogEntities =  catalogService.findCatalog(catalogQuery);
         mav.addObject("titlelist",catalogEntities);
+
+        CatalogQuery catalogQueryTitle = new CatalogQuery();
+        catalogQueryTitle.setId(catalogQuery.getParentId());
+        List<CatalogEntity> catalogList =  catalogService.findCatalog(catalogQueryTitle);
+        mav.addObject("cataloglist",catalogList);
+
         return mav;
     }
 }

@@ -7,17 +7,17 @@ import java.util.Date;
 
 public class CatalogQuery extends PageQuery{
 
-    private int id;
+    private Integer id;
     private String catalogName;
-    private int parentId;
+    private Integer parentId;
     private String catalogType;
     private String status;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -29,11 +29,11 @@ public class CatalogQuery extends PageQuery{
         this.catalogName = catalogName;
     }
 
-    public int getParentId() {
+    public Integer getParentId() {
         return parentId;
     }
 
-    public void setParentId(int parentId) {
+    public void setParentId(Integer parentId) {
         this.parentId = parentId;
     }
 

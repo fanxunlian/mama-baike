@@ -26,7 +26,7 @@
 </div>
 <div class="baike-nav">
     <div class="baike-title">
-        <li><a href="baike.html" id = "li-main" ><span>首页</span></a></li>
+        <li><a href="/" id = "li-main" ><span>首页</span></a></li>
         <li><a href="baby.html" id = "li-baby"><span>亲子</span></a></li>
         <li><a href="nutrition.html" id = "li-education"> <span>教育</span></a></li>
         <li><a href="disease.html" id = "li-desease"><span>疾病</span></a></li>
@@ -118,7 +118,10 @@
                 <img th:src="@{/web-static/imgs/ad/ad12.jpg}"/>
             </div>
             <div class="bottom">
-                <span>亲子</span>
+                <th:block th:each="catalog,iter:${cataloglist}">
+                    <span th:text="${catalog.catalogName}">亲子</span>
+                </th:block>
+
             </div>
         </div>
         <div class="right">
