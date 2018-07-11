@@ -1,5 +1,5 @@
 @CHARSET "UTF-8";
-a:hover{color:#400040;text-decoration:none /*无下划线*/ }
+a:hover{color: #400040;text-decoration:underline /*无下划线*/ }
 a:link{color:#400040;text-decoration:none /*无下划线*/}
 a:visited{color:#400040;text-decoration:none /*无下划线*/}
 a:active{color:#400040;text-decoration:none /*无下划线*/}
