@@ -105,7 +105,8 @@
 
         <th:block th:each="map,iterStat:${catalogmaplist}">
             <div class="catalog-title">
-                <a th:href="@{'/baike/catalog?id='+${map.catalog.id}}"> <span th:text="${map.catalog.catalogName}">备孕</span> </a>
+                <a th:if="${map.catalog.catalogType} == 1" th:href="@{'/baike/catalog?id='+${map.catalog.id}}"> <span th:text="${map.catalog.catalogName}">备孕</span> </a>
+                <a th:if="${map.catalog.catalogType} == 0" th:href="@{'/baike/article?id='+${map.catalog.id}}"> <span th:text="${map.catalog.catalogName}">备孕</span> </a>
             </div>
             <div class="catalog-content">
                 <th:block th:each="mapCatalog,iterCatalogStat:${map.catalogsublist}">

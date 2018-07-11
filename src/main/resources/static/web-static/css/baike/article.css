@@ -1,0 +1,27 @@
+.baike-content .article-content
+{
+    margin: 10px auto;
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+}
+.baike-content .article-content .article-title
+{
+    margin: 10px auto;
+    width: 1000px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #84b2ce;
+
+}
+
+.baike-content .article-content .article-body
+{
+    margin: 10px auto;
+    width: 1000px;
+    height: auto;
+    font-size: 14px;
+}
