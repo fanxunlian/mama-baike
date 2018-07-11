@@ -53,7 +53,7 @@
         </div>
         <div class="disease">
             <th:block th:each="nav,iterStat:${deseasenavlist}">
-                <li><a th:href="@{'/baike/catalog/baby?id='+${nav.id}}"><span th:text="${nav.catalogName}">备孕</span></a></li>
+                <li style="width: 130px;text-align: center"><a th:href="@{'/baike/catalog/baby?id='+${nav.id}}"><span th:text="${nav.catalogName}">备孕</span></a></li>
             </th:block>
         </div>
         <div class="life">
@@ -68,7 +68,7 @@
         </div>
         <div class="useage">
             <th:block th:each="nav,iterStat:${useagenavlist}">
-                <li><a th:href="@{'/baike/catalog/baby?id='+${nav.id}}"><span th:text="${nav.catalogName}">备孕</span></a></li>
+                <li style="width: 130px;text-align: center"> <a th:href="@{'/baike/catalog/baby?id='+${nav.id}}"><span th:text="${nav.catalogName}">备孕</span></a></li>
             </th:block>
         </div>
     </div>
