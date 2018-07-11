@@ -235,6 +235,17 @@
     background-color: #47bec0;
     border-left: 1px solid rgba(255, 255, 225, 0.2);
 }
+
+.baike-sub-title .baike-sub-title-mid li{
+    width: 50px;
+    height: 30px;
+    padding:0 10px;
+    font-size:14px;
+    line-height:30px;
+    text-align: center;
+    list-style: none;
+    float: left;
+}
 .baike-sub-title .active
 {
     background-color: #2e9fa0;

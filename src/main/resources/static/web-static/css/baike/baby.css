@@ -15,22 +15,24 @@ body
 .baby-big-title
 {
     width: 1000px;
-    height: 150px;
+    min-height: 150px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     border: 3px solid RGB(98,216,218);
+    zoom: 1;
+    overflow:hidden;
 }
 .baby-big-title .left{
     float: left;
     width: 150px;
-    height: 150px;
-    background-color: white;
+    min-height: 150px;
+
 }
 .baby-big-title .left .top{
     float: left;
     width: 150px;
-    height: 110px;
+    min-height: 110px;
     background-color: white;
 
 }
@@ -45,7 +47,7 @@ body
 .baby-big-title .left .bottom{
     float: left;
     width: 150px;
-    height: 40px;
+    min-height: 40px;
     text-align: center;
 }
 .baby-big-title .left .bottom span
@@ -58,7 +60,7 @@ body
     float: left;
     margin-top: 10px;
     width: 847px;
-    height: 140px;
+    min-height: 140px;
     background-color: white;
 }
 .baby-big-title .right li{
@@ -71,4 +73,48 @@ body
     text-align: left;
     list-style: disc;
     float: left;
+}
+.baike-body
+{
+    margin: 10px auto;
+    width: 1000px;
+    height: auto;
+    background-color: white;
+}
+.baike-body .catalog-title{
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid  #f4f8fb;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+
+
+}
+.baike-body .catalog-title a span
+{
+    margin-left: 10px;
+    color: #47bec0;
+}
+.baike-body  .catalog-content
+{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    zoom:1;
+    overflow:hidden;
+    
+}
+
+.baike-body  .catalog-content li{
+    width: 190px;
+    height: 40px;
+    padding:0 10px;
+    font-size:15px;
+    line-height:40px;
+    text-align: left;
+    list-style: disc;
+    float: left;
+    overflow: auto;
 }

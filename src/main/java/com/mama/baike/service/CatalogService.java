@@ -12,4 +12,9 @@ public interface CatalogService {
      * @return
      */
     public List<CatalogEntity> findCatalog(CatalogQuery catalogQuery);
+    /**
+     * 递归出导航
+     */
+    public List<CatalogEntity> findNavList(CatalogQuery catalogQuery);
+
 }
