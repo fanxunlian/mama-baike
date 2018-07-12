@@ -1,0 +1,188 @@
+body{
+    background-color: #f4f8fb;
+}
+.topic-top
+{
+    width: 100%;
+    height: 80px;
+}
+
+.topic-top .title{
+    margin-left: 100px;
+    height: 50px;
+    width: 150px;
+
+}
+.topic-top .title .top
+{
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #47bec0;
+
+}
+.topic-top .title .top span
+{
+    color: #47bec0;
+}
+.topic-top .title .bottom
+{
+    text-align: center;
+    font-size: 14px;
+    color: #47bec0;
+
+}
+.topic-top .title .bottom span{
+    color: #47bec0;
+}
+
+.topic-nav
+{
+    width: 100%;
+    height: 40px;
+    background-color: #67d8d9;
+}
+
+.topic-nav .topic-title
+{
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+
+}
+
+.topic-nav .topic-title .main{
+
+}
+.topic-nav li{
+    display:inline-block;
+    width: 105px;
+    height:100%;
+    padding:0 16px;
+    font-size:17px;
+    line-height:40px;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+}
+.topic-nav li span
+{
+    color: white;
+    color: white;
+}
+
+.topic-body
+{
+    margin: 10px auto;
+    width: 1000px;
+    min-height: 500px;
+    background-color: white;
+    zoom: 1;
+    overflow: hidden;
+
+}
+.topic-body .left{
+    float: left;
+    width: 700px;
+    height: auto;
+}
+.topic-body .right{
+    float: right;
+    width: 300px;
+    min-height: 500px;
+}
+.topic-body .line-title
+{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #47bec0;
+
+}
+.topic-body .line-title span
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #47bec0;
+}
+.topic-body .line-topic
+{
+    float: left;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 100px;
+}
+.topic-body .line-topic .topic-block
+{
+    float: left;
+    width: 350px;
+    height: 100%;
+}
+.topic-body .line-topic .topic-block .img-block
+{
+    float: left;
+    width: 60px;
+    height: 100px;
+}
+.topic-body .line-topic .topic-block .img-block img
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.topic-body .line-topic .topic-block .topic-block-title
+{
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+    width: 260px;
+    height: 20px;
+    line-height: 30px;
+}
+.topic-body .line-topic .topic-block .topic-block-title span
+{
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.topic-body .line-topic .topic-block .topic-block-remark
+{
+    margin-top: 5px;
+    margin-left: 30px;
+    float: left;
+    width: 260px;
+    height: 20px;
+    line-height: 30px;
+}
+.topic-body .line-topic .topic-block .topic-block-remark span
+{
+    width: 90px;
+    font-size: 12px;
+    color: lightgray;
+}
+
+.topic-body .line-topic .topic-block .topic-block-new
+{
+    margin-top: 5px;
+    margin-left: 30px;
+    float: left;
+    width: 260px;
+    height: 20px;
+    line-height: 30px;
+}
+.topic-body .line-topic .topic-block .topic-block-new span
+{
+    font-size: 12px;
+}
