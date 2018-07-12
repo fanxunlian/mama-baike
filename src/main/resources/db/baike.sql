@@ -10,16 +10,50 @@ Target Server Type    : MYSQL
 Target Server Version : 50631
 File Encoding         : 65001
 
-Date: 2018-07-11 17:57:43
+Date: 2018-07-12 17:33:29
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for a_article
+-- Table structure for b_baby
 -- ----------------------------
-DROP TABLE IF EXISTS `a_article`;
-CREATE TABLE `a_article` (
+DROP TABLE IF EXISTS `b_baby`;
+CREATE TABLE `b_baby` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `birthday` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '出生日期',
+  `name` varchar(20) DEFAULT NULL COMMENT '名字',
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of b_baby
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for b_user_baby
+-- ----------------------------
+DROP TABLE IF EXISTS `b_user_baby`;
+CREATE TABLE `b_user_baby` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `baby_id` int(11) NOT NULL,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of b_user_baby
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for c_article
+-- ----------------------------
+DROP TABLE IF EXISTS `c_article`;
+CREATE TABLE `c_article` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) DEFAULT NULL,
   `imge_uid` varchar(50) DEFAULT NULL,
@@ -31,7 +65,7 @@ CREATE TABLE `a_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of a_article
+-- Records of c_article
 -- ----------------------------
 
 -- ----------------------------
@@ -133,12 +167,172 @@ INSERT INTO `c_catalog` VALUES ('78', '单纯疱疹病毒1型', '26', '1', '2018
 INSERT INTO `c_catalog` VALUES ('79', '单纯疱疹病毒2型', '26', '1', '2018-07-11 17:48:57', '2018-07-11 17:48:57', '1');
 INSERT INTO `c_catalog` VALUES ('80', '单纯疱疹是怎么引起的', '26', '1', '2018-07-11 17:49:02', '2018-07-11 17:49:02', '1');
 INSERT INTO `c_catalog` VALUES ('81', '单纯疱疹病毒能怀孕吗', '26', '1', '2018-07-11 17:49:08', '2018-07-11 17:49:08', '1');
-INSERT INTO `c_catalog` VALUES ('82', '单纯疱疹是什么', '77', '1', '2018-07-11 17:49:51', '2018-07-11 17:49:51', '1');
-INSERT INTO `c_catalog` VALUES ('83', '单纯疱疹的症状', '77', '1', '2018-07-11 17:50:01', '2018-07-11 17:50:01', '1');
-INSERT INTO `c_catalog` VALUES ('84', '单纯疱疹是怎么引起的', '77', '1', '2018-07-11 17:50:24', '2018-07-11 17:50:24', '1');
-INSERT INTO `c_catalog` VALUES ('85', '单纯胞疹怎么治', '77', '1', '2018-07-11 17:50:26', '2018-07-11 17:50:26', '1');
-INSERT INTO `c_catalog` VALUES ('86', '单纯胞疹能治愈吗', '77', '1', '2018-07-11 17:50:37', '2018-07-11 17:50:37', '1');
-INSERT INTO `c_catalog` VALUES ('87', '单纯疱疹传染吗', '77', '1', '2018-07-11 17:50:47', '2018-07-11 17:50:47', '1');
+INSERT INTO `c_catalog` VALUES ('82', '单纯疱疹是什么', '77', '0', '2018-07-12 09:20:58', '2018-07-12 09:20:58', '1');
+INSERT INTO `c_catalog` VALUES ('83', '单纯疱疹的症状', '77', '0', '2018-07-12 09:20:57', '2018-07-12 09:20:57', '1');
+INSERT INTO `c_catalog` VALUES ('84', '单纯疱疹是怎么引起的', '77', '0', '2018-07-12 09:20:56', '2018-07-12 09:20:56', '1');
+INSERT INTO `c_catalog` VALUES ('85', '单纯胞疹怎么治', '77', '0', '2018-07-12 09:20:55', '2018-07-12 09:20:55', '1');
+INSERT INTO `c_catalog` VALUES ('86', '单纯胞疹能治愈吗', '77', '0', '2018-07-12 09:20:53', '2018-07-12 09:20:53', '1');
+INSERT INTO `c_catalog` VALUES ('87', '单纯疱疹传染吗', '77', '0', '2018-07-12 09:20:52', '2018-07-12 09:20:52', '1');
+
+-- ----------------------------
+-- Table structure for f_forum
+-- ----------------------------
+DROP TABLE IF EXISTS `f_forum`;
+CREATE TABLE `f_forum` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL COMMENT '圈子名称',
+  `creator_id` int(11) DEFAULT NULL COMMENT '创建人id',
+  `remark` varchar(100) DEFAULT NULL COMMENT '备注',
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `type` varchar(10) DEFAULT '0' COMMENT '0-普通贴 1-推荐贴 2-精华帖',
+  `tag` varchar(10) DEFAULT NULL COMMENT '帖子标签 0-火爆 1-精华 3-带图片 分号分隔',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of f_forum
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for f_reply
+-- ----------------------------
+DROP TABLE IF EXISTS `f_reply`;
+CREATE TABLE `f_reply` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `forum_id` int(11) DEFAULT NULL,
+  `reply_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `content_uid` varchar(50) DEFAULT NULL COMMENT 'mongo存储的内容',
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='帖子回复';
+
+-- ----------------------------
+-- Records of f_reply
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for s_admin
+-- ----------------------------
+DROP TABLE IF EXISTS `s_admin`;
+CREATE TABLE `s_admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `salt` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '盐',
+  `nick_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '全名',
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of s_admin
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for s_dictionary
+-- ----------------------------
+DROP TABLE IF EXISTS `s_dictionary`;
+CREATE TABLE `s_dictionary` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `value` varchar(100) DEFAULT NULL,
+  `parent_id` int(11) DEFAULT NULL,
+  `sort` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of s_dictionary
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for t_topic
+-- ----------------------------
+DROP TABLE IF EXISTS `t_topic`;
+CREATE TABLE `t_topic` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `topic_type` varchar(10) DEFAULT NULL COMMENT '1-妈妈圈 2-同城 3-同龄',
+  `class_type` varchar(10) DEFAULT NULL COMMENT '1-亲子2-时尚',
+  `name` varchar(50) DEFAULT NULL COMMENT '话题名称',
+  `remark` varchar(50) DEFAULT NULL COMMENT '备注',
+  `topic_uid` varchar(50) DEFAULT NULL COMMENT '话题详细内容存储id',
+  `manage_id` int(11) DEFAULT NULL,
+  `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_topic
+-- ----------------------------
+INSERT INTO `t_topic` VALUES ('1', '1', '1', '健康养生馆', '年轻人，我劝你养生', null, null, '2018-07-12 17:19:55', '2018-07-12 17:19:55');
+INSERT INTO `t_topic` VALUES ('2', '1', '1', '准备怀孕', '备孕经验大全，谁来谁怀孕', null, null, '2018-07-12 17:19:55', '2018-07-12 17:19:55');
+INSERT INTO `t_topic` VALUES ('3', '1', '1', '0-1岁宝宝', '吃喝拉撒睡无小事', null, null, '2018-07-12 17:19:56', '2018-07-12 17:19:56');
+INSERT INTO `t_topic` VALUES ('4', '1', '1', '早教幼教', '再不陪孩子早教，TA就长大了！', null, null, '2018-07-12 17:19:56', '2018-07-12 17:19:56');
+INSERT INTO `t_topic` VALUES ('5', '1', '1', '时尚美容', '没有丑女人，只有懒女人~', null, null, '2018-07-12 17:19:57', '2018-07-12 17:19:57');
+INSERT INTO `t_topic` VALUES ('6', '1', '1', '情感婚姻', '狗血故事天天在上演', null, null, '2018-07-12 17:19:57', '2018-07-12 17:19:57');
+INSERT INTO `t_topic` VALUES ('7', '1', '1', '全球代购专场', '不费力气败遍全球', null, null, '2018-07-12 17:19:58', '2018-07-12 17:19:58');
+INSERT INTO `t_topic` VALUES ('8', '1', '1', '婴童用品专场', '给孩子挑好货就来这', null, null, '2018-07-12 17:19:59', '2018-07-12 17:19:59');
+INSERT INTO `t_topic` VALUES ('9', '1', '1', '辣妈晒照', '谁还不是小仙女！', null, null, '2018-07-12 17:19:59', '2018-07-12 17:19:59');
+INSERT INTO `t_topic` VALUES ('10', '1', '1', '谈天说地', '想聊就聊，开心就好', null, null, '2018-07-12 17:20:00', '2018-07-12 17:20:00');
+INSERT INTO `t_topic` VALUES ('11', '1', '1', '美食厨房', '唯有美食不可辜负', null, null, '2018-07-12 17:20:02', '2018-07-12 17:20:02');
+INSERT INTO `t_topic` VALUES ('12', '1', '1', '职场女性', '事业家庭少一个都不行', null, null, '2018-07-12 17:20:03', '2018-07-12 17:20:03');
+INSERT INTO `t_topic` VALUES ('13', '1', '1', '辣妈用品专场', '妈妈的线上百货超市', null, null, '2018-07-12 17:20:03', '2018-07-12 17:20:03');
+INSERT INTO `t_topic` VALUES ('14', '1', '1', '非买不可·拼单团购', '省半个月工资', null, null, '2018-07-12 17:20:04', '2018-07-12 17:20:04');
+INSERT INTO `t_topic` VALUES ('15', '1', '1', '待产包讨论', '实用划算清单照着买', null, null, '2018-07-12 17:20:05', '2018-07-12 17:20:05');
+INSERT INTO `t_topic` VALUES ('16', '1', '1', '生男生女猜猜猜', '民间B超机性别任选', null, null, '2018-07-12 17:20:06', '2018-07-12 17:20:06');
+INSERT INTO `t_topic` VALUES ('17', '1', '2', '宝宝名字怎么取', '取名专家常出没于此', null, null, '2018-07-12 17:20:07', '2018-07-12 17:20:07');
+INSERT INTO `t_topic` VALUES ('18', '1', '2', '宝宝营养辅食', '让宝宝爱上辅食，一周7天辅食不重样', null, null, '2018-07-12 17:20:09', '2018-07-12 17:20:09');
+INSERT INTO `t_topic` VALUES ('19', '1', '2', '坐月子', '月子餐产后护理经验', null, null, '2018-07-12 17:20:09', '2018-07-12 17:20:09');
+INSERT INTO `t_topic` VALUES ('20', '1', '2', '幼儿园宝宝', '宝宝踏入小社会啦', null, null, '2018-07-12 17:20:25', '2018-07-12 17:20:25');
+INSERT INTO `t_topic` VALUES ('21', '1', '2', '早教幼教', '再不陪孩子早教，TA就长大了！', null, null, '2018-07-12 17:20:27', '2018-07-12 17:20:27');
+INSERT INTO `t_topic` VALUES ('22', '1', '2', '辣妈晒照', '谁还不是小仙女！', null, null, '2018-07-12 17:20:28', '2018-07-12 17:20:28');
+INSERT INTO `t_topic` VALUES ('23', '1', '2', '瘦身大作战', '瘦下来才知道你多美', null, null, '2018-07-12 17:20:29', '2018-07-12 17:20:29');
+INSERT INTO `t_topic` VALUES ('24', '1', '3', '母乳喂养', '轻松做奶牛，享受母乳时光', null, null, '2018-07-12 17:20:30', '2018-07-12 17:20:30');
+INSERT INTO `t_topic` VALUES ('25', '1', '3', '母乳喂养', '轻松做奶牛，享受母乳时光', null, null, '2018-07-12 17:20:32', '2018-07-12 17:20:32');
+INSERT INTO `t_topic` VALUES ('26', '1', '3', '母乳喂养', '轻松做奶牛，享受母乳时光', null, null, '2018-07-12 17:20:33', '2018-07-12 17:20:33');
+
+-- ----------------------------
+-- Table structure for t_topic_forum
+-- ----------------------------
+DROP TABLE IF EXISTS `t_topic_forum`;
+CREATE TABLE `t_topic_forum` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `topic_id` int(11) DEFAULT NULL,
+  `forum_id` int(11) DEFAULT NULL,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_topic_forum
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for t_topic_manager
+-- ----------------------------
+DROP TABLE IF EXISTS `t_topic_manager`;
+CREATE TABLE `t_topic_manager` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `topic_id` int(11) DEFAULT NULL,
+  `manager_id` int(11) DEFAULT NULL,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_topic_manager
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for u_user
@@ -148,15 +342,74 @@ CREATE TABLE `u_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(100) DEFAULT NULL,
   `user_pass` varchar(100) DEFAULT NULL,
+  `salt` varchar(50) DEFAULT NULL,
   `nick_name` varchar(100) DEFAULT NULL,
-  `user_type` varchar(100) DEFAULT NULL,
+  `user_type` varchar(100) DEFAULT '1' COMMENT '1-用户 ',
   `mobile` varchar(11) DEFAULT NULL,
   `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `location` varchar(20) DEFAULT NULL COMMENT '地址',
+  `location_id` int(11) DEFAULT NULL COMMENT '地址id',
+  `points` int(11) DEFAULT NULL COMMENT '积分',
+  `level` int(11) DEFAULT NULL COMMENT '等级',
+  `verify` varchar(255) DEFAULT NULL COMMENT '认证',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of u_user
 -- ----------------------------
-INSERT INTO `u_user` VALUES ('1', 'fxl', '123', '樊训练', '1', null, '2018-07-03 11:01:17', '2018-07-03 11:01:19');
+INSERT INTO `u_user` VALUES ('1', 'fxl', '123', null, '樊训练', '1', null, '2018-07-03 11:01:17', '2018-07-03 11:01:19', null, null, null, null, null);
+
+-- ----------------------------
+-- Table structure for u_user_fans
+-- ----------------------------
+DROP TABLE IF EXISTS `u_user_fans`;
+CREATE TABLE `u_user_fans` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fans_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of u_user_fans
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for u_user_focus
+-- ----------------------------
+DROP TABLE IF EXISTS `u_user_focus`;
+CREATE TABLE `u_user_focus` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `focus_id` int(11) NOT NULL,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of u_user_focus
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for u_user_topic
+-- ----------------------------
+DROP TABLE IF EXISTS `u_user_topic`;
+CREATE TABLE `u_user_topic` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `topic_id` int(11) NOT NULL,
+  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `topic_id` (`topic_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of u_user_topic
+-- ----------------------------
