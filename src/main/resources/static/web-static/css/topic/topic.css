@@ -111,28 +111,20 @@ body{
     font-weight: bold;
     color: #47bec0;
 }
-.topic-body .line-topic
-{
-    float: left;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    height: 100px;
-}
-.topic-body .line-topic .topic-block
+
+.topic-body  .topic-block
 {
     float: left;
     width: 350px;
-    height: 100%;
+    height: 100px;
 }
-.topic-body .line-topic .topic-block .img-block
+.topic-body  .topic-block .img-block
 {
     float: left;
     width: 60px;
     height: 100px;
 }
-.topic-body .line-topic .topic-block .img-block img
+.topic-body  .topic-block .img-block img
 {
     margin-top: 10px;
     margin-left: 10px;
@@ -140,7 +132,7 @@ body{
     height: 60px;
 }
 
-.topic-body .line-topic .topic-block .topic-block-title
+.topic-body  .topic-block .topic-block-title
 {
     margin-top: 10px;
     margin-left: 30px;
@@ -149,7 +141,7 @@ body{
     height: 20px;
     line-height: 30px;
 }
-.topic-body .line-topic .topic-block .topic-block-title span
+.topic-body  .topic-block .topic-block-title span
 {
 
     font-weight: bold;
@@ -157,7 +149,7 @@ body{
 }
 
 
-.topic-body .line-topic .topic-block .topic-block-remark
+.topic-body  .topic-block .topic-block-remark
 {
     margin-top: 5px;
     margin-left: 30px;
@@ -166,14 +158,14 @@ body{
     height: 20px;
     line-height: 30px;
 }
-.topic-body .line-topic .topic-block .topic-block-remark span
+.topic-body  .topic-block .topic-block-remark span
 {
     width: 90px;
     font-size: 12px;
     color: lightgray;
 }
 
-.topic-body .line-topic .topic-block .topic-block-new
+.topic-body  .topic-block .topic-block-new
 {
     margin-top: 5px;
     margin-left: 30px;
@@ -182,7 +174,7 @@ body{
     height: 20px;
     line-height: 30px;
 }
-.topic-body .line-topic .topic-block .topic-block-new span
+.topic-body  .topic-block .topic-block-new span
 {
     font-size: 12px;
 }

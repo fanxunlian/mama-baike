@@ -9,9 +9,18 @@ public class TopicEntity {
     private String name;
     private String remark;
     private String topicUid;
+    private String imageUid;
     private Integer manageId;
     private Date updateTime;
     private Date createTime;
+
+    public String getImageUid() {
+        return imageUid;
+    }
+
+    public void setImageUid(String imageUid) {
+        this.imageUid = imageUid;
+    }
 
     public int getId() {
         return id;

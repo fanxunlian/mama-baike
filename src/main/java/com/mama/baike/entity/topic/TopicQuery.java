@@ -3,7 +3,7 @@ package com.mama.baike.entity.topic;
 import com.mama.baike.entity.page.PageQuery;
 
 public class TopicQuery extends PageQuery {
-    private int id;
+    private Integer id;
     private String topicType;
     private String classType;
     private String name;
@@ -11,11 +11,11 @@ public class TopicQuery extends PageQuery {
     private String topicUid;
     private Integer manageId;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

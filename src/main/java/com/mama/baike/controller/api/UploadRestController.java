@@ -34,6 +34,7 @@ public class UploadRestController {
     public ResultBody uploadImg(@RequestParam("file") MultipartFile multipartFile) throws FileUploadException, IOException
     {
         ResultBody resultBody = new ResultBody();
+        String fileName = "";
         String filename = multipartFile.getOriginalFilename();
         String fileTxt = filename.substring(filename.lastIndexOf(".")+1);
         byte[] filebuf = multipartFile.getBytes();
@@ -43,10 +44,11 @@ public class UploadRestController {
             resultBody.setMessage("文件为空");
             return resultBody;
         }
-
-        File uploadFile = File.createTempFile(UUID.randomUUID().toString(),fileTxt);
+        fileName = UUID.randomUUID().toString();
+        File uploadFile = File.createTempFile(fileName,fileTxt);
         multipartFile.transferTo(uploadFile);
-        uploadService.SaveFile("file",uploadFile,filename,filename);
+        uploadService.SaveFile("file",uploadFile,fileName,filename);
+        resultBody.setData(fileName);
         return resultBody;
     }
 

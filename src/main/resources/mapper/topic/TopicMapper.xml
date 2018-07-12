@@ -10,6 +10,7 @@
         <result column="name" jdbcType="VARCHAR" property="name" />
         <result column="remark" jdbcType="VARCHAR" property="remark" />
         <result column="topic_uid" jdbcType="VARCHAR" property="topicUid" />
+        <result column="image_uid" jdbcType="VARCHAR" property="imageUid" />
         <result column="manage_id" jdbcType="INTEGER" property="manageId" />
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
