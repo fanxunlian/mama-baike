@@ -10,7 +10,7 @@
         <result column="type" jdbcType="VARCHAR" property="type" />
         <result column="creator_id" jdbcType="INTEGER" property="creatorId" />
         <result column="remark" jdbcType="VARCHAR" property="remark" />
-        <result column="topic_content_id" jdbcType="VARCHAR" property="topicContentId" />
+        <result column="topic_content_uid" jdbcType="VARCHAR" property="topicContentUid" />
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
     </resultMap>

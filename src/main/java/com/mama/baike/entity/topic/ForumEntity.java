@@ -10,7 +10,7 @@ public class ForumEntity {
     private String type;
     private Integer creatorId;
     private String remark;
-    private String topicContentId;
+    private String topicContentUid;
     private Date updateTime;
     private Date createTime;
 
@@ -78,11 +78,11 @@ public class ForumEntity {
         this.createTime = createTime;
     }
 
-    public String getTopicContentId() {
-        return topicContentId;
+    public String getTopicContentUid() {
+        return topicContentUid;
     }
 
-    public void setTopicContentId(String topicContentId) {
-        this.topicContentId = topicContentId;
+    public void setTopicContentUid(String topicContentUid) {
+        this.topicContentUid = topicContentUid;
     }
 }

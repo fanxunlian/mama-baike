@@ -8,6 +8,7 @@ public class ForumQuery extends PageQuery {
     private Integer topicId;
     private String type;
     private Integer creatorId;
+    private String topicContentUid;
 
     public Integer getId() {
         return id;
@@ -47,5 +48,13 @@ public class ForumQuery extends PageQuery {
 
     public void setCreatorId(Integer creatorId) {
         this.creatorId = creatorId;
+    }
+
+    public String getTopicContentUid() {
+        return topicContentUid;
+    }
+
+    public void setTopicContentUid(String topicContentUid) {
+        this.topicContentUid = topicContentUid;
     }
 }

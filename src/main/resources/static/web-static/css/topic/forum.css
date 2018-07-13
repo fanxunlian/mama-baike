@@ -107,6 +107,7 @@ body
 
 .forum-body .left .forum-content
 {
+    float: left;
     margin-left: 10px;
     width: 680px;
     height: auto;
@@ -117,7 +118,6 @@ body
 .forum-body .left .forum-content .all-block
 {
     float: left;
-    margin-top: 10px;
     width: 100%;
     height: 100%;
 

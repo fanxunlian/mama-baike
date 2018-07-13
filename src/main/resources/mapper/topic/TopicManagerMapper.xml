@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mama.baike.dao.topic.TopicManagerDao">
+
+    <resultMap id="BaseResultMap" type="com.mama.baike.entity.topic.TopicManagerEntity">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <id column="topic_id" jdbcType="INTEGER" property="topicId" />
+        <id column="user_id" jdbcType="INTEGER" property="userId" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    </resultMap>
+
+    <select id="queryObject" resultMap="BaseResultMap"
+            parameterType="com.mama.baike.entity.topic.TopicManagerQuery">
+
+        select * from t_topic_user t where 1=1
+        <if test="id != null">
+            AND t.id = #{id}
+        </if>
+        <if test="topicId != null">
+            AND t.topic_id = #{topicId}
+        </if>
+        <if test="userId != null">
+            AND t.user_id = #{userId}
+        </if>
+
+        ORDER  BY  f.create_time DESC
+
+    </select>
+    <select id="queryList" resultMap="BaseResultMap"
+            parameterType="com.mama.baike.entity.topic.TopicManagerQuery">
+
+        select * from t_topic_user t where 1=1
+        <if test="id != null">
+            AND t.id = #{id}
+        </if>
+        <if test="topicId != null">
+            AND t.topic_id = #{topicId}
+        </if>
+        <if test="userId != null">
+            AND t.user_id = #{userId}
+        </if>
+
+        ORDER  BY  t.create_time DESC
+
+    </select>
+
+</mapper>

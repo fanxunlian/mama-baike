@@ -6,15 +6,9 @@ import com.mama.baike.common.utils.DateUtil;
 import com.mama.baike.entity.catalog.CatalogQuery;
 import com.mama.baike.entity.system.DictionaryEntity;
 import com.mama.baike.entity.system.DictionaryQuery;
-import com.mama.baike.entity.topic.ForumEntity;
-import com.mama.baike.entity.topic.ForumQuery;
-import com.mama.baike.entity.topic.TopicEntity;
-import com.mama.baike.entity.topic.TopicQuery;
+import com.mama.baike.entity.topic.*;
 import com.mama.baike.entity.user.UserEntity;
-import com.mama.baike.service.DictionaryService;
-import com.mama.baike.service.ForumService;
-import com.mama.baike.service.TopicService;
-import com.mama.baike.service.UserService;
+import com.mama.baike.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,6 +33,12 @@ public class TopicController {
 
     @Autowired
     private DictionaryService dictionaryService;
+
+    @Autowired
+    private TopicManagerService topicManagerService;
+
+    @Autowired
+    private MongoService mongoService;
 
     @AuthIgnore
     @RequestMapping(value = "/index")
@@ -80,6 +80,7 @@ public class TopicController {
     {
         ModelAndView mav = new ModelAndView("/web/topic/forum");
         List<Map<String,Object>> topicForumList = new LinkedList<>();
+        List<UserEntity> managerList = new LinkedList<>();
 
         Integer topicId = Integer.parseInt(request.getParameter("id"));
         TopicQuery topicQuery = new TopicQuery();
@@ -101,12 +102,21 @@ public class TopicController {
             forumLine.put("creator",creatorUser);
             forumLine.put("forum",forum);
 
-            String strTime = DateUtil.getDisTimeStr(forum.getCreateTime(),new Date())+"前";
+            String strTime = DateUtil.getDisTimeStr(forum.getCreateTime(),new Date());
             forumLine.put("time",strTime);
             topicForumList.add(forumLine);
         }
 
         mav.addObject("forumlist",topicForumList);
+
+
+        List<TopicManagerEntity> topicManagerList = topicManagerService.findTopicManagerByTopicId(topicId);
+        for (TopicManagerEntity topicManagerEntity :topicManagerList)
+        {
+            UserEntity userEntity = userService.findUserById(topicManagerEntity.getUserId());
+            managerList.add(userEntity);
+        }
+        mav.addObject("managerlist",managerList);
 
         return mav;
     }

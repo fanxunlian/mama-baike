@@ -48,7 +48,10 @@
                 </div>
                 <div class="forum-right-block">
                     <span style="float: left">管理员：</span>
-                    <a href="#"><img src="@{/web-static/imgs/ad/ad8.jpg}"/></a>
+                    <th:block th:each="manager,iterStat:${managerlist}">
+                        <a href="#"><img th:src="@{'/api/upload/img/index?imgeName='+${manager.imageUid}}"/></a>
+                    </th:block>
+
                 </div>
                 <div class="forum-right-block">
                     <span th:text="${topic.remark}"></span>
