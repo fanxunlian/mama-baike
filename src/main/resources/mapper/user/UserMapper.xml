@@ -14,7 +14,7 @@
     </resultMap>
 
     <select id="queryObject" resultMap="BaseResultMap"
-            parameterType="com.mama.baike.entity.user.UserQuery">
+            parameterType="java.lang.Integer">
 
         select * from u_user u where 1=1
         <if test="id != null">

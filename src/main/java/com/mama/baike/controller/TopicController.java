@@ -15,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -33,7 +34,7 @@ public class TopicController {
 
     @AuthIgnore
     @RequestMapping(value = "/index")
-    public ModelAndView topicIndex(@LoginUser UserEntity user) throws ParseException {
+    public ModelAndView topicIndex(@LoginUser UserEntity user){
         ModelAndView mav = new ModelAndView("/web/topic/index");
         List<Map<String,Object>> mapList = new LinkedList<>();
 
@@ -59,6 +60,26 @@ public class TopicController {
         }
 
         mav.addObject("topicmaplist", mapList);
+        return mav;
+    }
+
+    /**
+     * 话题查询
+     */
+    @AuthIgnore
+    @RequestMapping(value = "/forum")
+    public ModelAndView findTopicForum(@LoginUser UserEntity user, HttpServletRequest request)
+    {
+        ModelAndView mav = new ModelAndView("/web/topic/forum");
+
+        String topicId = request.getParameter("id");
+        TopicQuery topicQuery = new TopicQuery();
+        topicQuery.setId(Integer.parseInt(topicId));
+        List<TopicEntity> topicList = topicService.findTopicList(topicQuery);
+        if(!topicList.isEmpty())
+        {
+            mav.addObject("topic",topicList.get(0));
+        }
         return mav;
     }
 }

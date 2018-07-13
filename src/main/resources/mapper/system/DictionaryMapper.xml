@@ -16,7 +16,7 @@
     </resultMap>
 
     <select id="queryObject" resultMap="BaseResultMap"
-            parameterType="com.mama.baike.entity.system.DictionaryQuery">
+            parameterType="java.lang.Integer">
 
         select * from s_dictionary d where 1=1
         <if test="id != null">

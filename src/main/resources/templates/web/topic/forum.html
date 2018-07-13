@@ -1,0 +1,109 @@
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>百科-妈妈网</title>
+    <meta name="keywords" content="育儿" />
+    <meta name="description" content="育儿平台" />
+    <!--css-->
+    <link th:href="@{/web-static/css/common/common.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/topic/topic.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/topic/forum.css}" type="text/css" rel="stylesheet" media="screen"/>
+
+</head>
+<body>
+<div class="mama-top-bar">
+
+</div>
+<div class="topic-top">
+    <div class="title">
+        <div class="top">
+            <a href="#"><span>妈妈圈 - 社区</span></a>
+        </div>
+        <div class="bottom">
+            <span>宝贝的世界 就要贝亲宝</span>
+
+        </div>
+    </div>
+</div>
+<div class="topic-nav">
+    <div class="topic-title">
+        <li><a href="/"  ><span>首页</span></a></li>
+        <li><a href="/topic/index" ><span>妈妈圈</span></a></li>
+        <li><a href="city.html" > <span>同城</span></a></li>
+        <li><a href="age.html" ><span>同龄</span></a></li>
+    </div>
+</div>
+<div class="forum-body">
+    <div class="left">
+        <div class="forum-top">
+            <div class="forum-top-img">
+                <a href="#"><img th:src="@{'/api/upload/img/index?imgeName='+${topic.imageUid}}"/></a>
+            </div>
+            <div class="forum-right">
+                <div class="forum-right-title">
+                    <span th:text="${topic.name}">二手闲置专场 </span>
+                </div>
+                <div class="forum-right-block">
+                    <span>成员：</span><span style="color: red">1990463</span>
+                </div>
+                <div class="forum-right-block">
+                    <span style="float: left">管理员：</span>
+                    <a href="#"><img src="@{/web-static/imgs/ad/ad8.jpg}"/></a>
+                </div>
+                <div class="forum-right-block">
+                    <span th:text="${topic.remark}"></span>
+                </div>
+            </div>
+        </div>
+        <div class="line-button">
+            <div class="button">
+               <a href="#"><span> 发表话题</span></a>
+            </div>
+        </div>
+        <div class="forum-content">
+            <div class="select-area">
+                <div class="select-all-button active"  style="margin-left: 0px">
+                    <a href="#"><span>全部</span></a>
+                </div>
+                <div class="select-all-button inactive" >
+                    <a href="#"><span>精华</span></a>
+                </div>
+                <div class="select-all-button inactive" >
+                    <a href="#"><span>最新</span></a>
+                </div>
+            </div>
+            <div class="all-block">
+                <div class="line-forum">
+                    <div class="block-left">
+                        <img th:src="@{/web-static/imgs/ad/ad6.png}"/>
+                    </div>
+                    <div class="block-right">
+                        <div class="forum-title">
+                            <a href="#"><span>月度精华王vol.20丨就…7月的创造发帖王开始了啊（附5月</span></a>
+                        </div>
+                        <div class="forum-creator">
+                            虞美人 备孕中 广州市
+                        </div>
+                        <div class="show-time">23秒前</div>
+                        <div class="forum-replyer">
+
+                            <div class="replyer">
+                                <a href="#"><img th:src="@{/web-static/imgs/ad/ad9.jpg}"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript" th:src="@{/web-static/js/jquery/jquery-1.7.2.min.js}"></script>
+<script type="text/javascript" th:src="@{/web-static/js/topic/forum.js}"></script>
+</body>
+</html>

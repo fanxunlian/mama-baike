@@ -43,10 +43,13 @@
             <th:block th:each="topic,iterStat:${map.topiclist}">
                 <div class="topic-block">
                     <div class="img-block">
-                        <img th:src="@{'/api/upload/img/index?imgeName='+${topic.imageUid}}"/>
+                        <a th:href="@{'/topic/forum?id='+${topic.id}}">
+                            <img th:src="@{'/api/upload/img/index?imgeName='+${topic.imageUid}}"/>
+                        </a>
+
                     </div>
                     <div class="topic-block-title">
-                        <a href="/"> <span th:text="${topic.name}">辣妈圈子</span></a>
+                        <a th:href="@{'/topic/forum?id='+${topic.id}}"> <span th:text="${topic.name}">辣妈圈子</span></a>
                     </div>
                     <div class="topic-block-remark">
                         <span>成员：100W+</span>

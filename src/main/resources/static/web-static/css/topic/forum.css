@@ -1,0 +1,231 @@
+body
+{
+    background-color: #f4f8fb;
+}
+.forum-body{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    min-height: 500px;
+    background-color: white;
+}
+.forum-body .left{
+    float: left;
+
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    overflow: hidden;
+
+}
+.forum-body .right{
+    float: left;
+    width: 30px;
+    min-height: 500px;
+    background-color: white;
+    overflow: hidden;
+
+}
+.forum-body .left .forum-top
+{
+    margin: 10px 0 0 10px;
+    width: 680px;
+    height: 140px;
+    border: 1px solid #f4f8fb;
+}
+.forum-body .left .forum-top .forum-top-img
+{
+    float: left;
+    width: 140px;
+    height: 140px;
+}
+.forum-body .left .forum-top .forum-top-img img
+{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.forum-body .left .forum-top .forum-right
+{
+    float: right;
+    width: 530px;
+    height: 140px;
+}
+.forum-body .left .forum-top .forum-right .forum-right-title
+{
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 100%;
+    height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.forum-body .left .forum-top .forum-right .forum-right-block
+{
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    color: darkgray;
+
+}
+.forum-body .left .forum-top .forum-right .forum-right-block img
+{
+    float: left;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.forum-body .left  .line-button
+{
+    margin: 10px;
+    width: 100%;
+    height: 50px;
+}
+.forum-body .left  .line-button .button{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #47bec0;
+    text-align: center;
+    border-radius: 16px;
+}
+.forum-body .left  .line-button .button span
+{
+
+    line-height: 40px;
+    color: white;
+}
+
+.forum-body .left .forum-content
+{
+    margin-left: 10px;
+    width: 680px;
+    height: auto;
+    zoom: 1;
+    overflow: hidden;
+
+}
+.forum-body .left .forum-content .all-block
+{
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+.forum-body .left .forum-content .select-area
+{
+    float: left;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid lightgray;
+
+}
+.forum-body .left .forum-content .select-area .active
+{
+    background-color: white;
+}
+.forum-body .left .forum-content .select-area .inactive
+{
+    background-color: RGB(246,246,246);
+}
+.forum-body .left .forum-content .select-area .select-all-button
+{
+    float: left;
+    margin-left: 5px;
+    margin-top: 38px;
+    width: 80px;
+    height: 30px;
+    border-left: 1px solid lightgray;
+    border-top: 2px solid lightgray;
+    border-right: 1px solid lightgray;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.forum-body .left .forum-content .all-block .line-forum
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px dashed lightgray;
+}
+.forum-body .left .forum-content .all-block .line-forum .block-left{
+    float: left;
+    width: 60px;
+    height: 100px;
+
+}
+.forum-body .left .forum-content .all-block .line-forum .block-right{
+    float: right;
+    width: 615px;
+    height: 100px;
+
+}
+
+.forum-body .left .forum-content .all-block .line-forum .block-left img
+{
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.forum-body .left .forum-content .all-block .line-forum .block-right .forum-title
+{
+    margin-top: 5px;
+    width: 550px;
+    height: 30px;
+    font-size: 14px;
+
+}
+.forum-body .left .forum-content .all-block .line-forum .block-right .forum-creator
+{
+    width: 550px;
+    height: 20px;
+    font-size: 14px;
+
+}
+.forum-body .left .forum-content .all-block .line-forum .block-right .forum-replyer
+{
+    float: right;
+    margin-top: 5px;
+    width: 500px;
+    height: 40px;
+    font-size: 14px;
+
+
+}
+.forum-body .left .forum-content .all-block .line-forum .block-right  .show-time
+{
+    float: left;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+}
+.forum-body .left .forum-content .all-block .line-forum .block-right .forum-replyer .replyer{
+    float: right;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+}
+.forum-body .left .forum-content .all-block .line-forum .block-right .forum-replyer .replyer img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
