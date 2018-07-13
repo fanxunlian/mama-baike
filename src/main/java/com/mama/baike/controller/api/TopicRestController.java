@@ -2,6 +2,7 @@ package com.mama.baike.controller.api;
 
 import com.mama.baike.annotation.AuthIgnore;
 import com.mama.baike.common.ResultBody;
+import com.mama.baike.entity.topic.ForumQuery;
 import com.mama.baike.entity.topic.TopicQuery;
 import com.mama.baike.service.MongoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +16,12 @@ public class TopicRestController {
     @Autowired
     private MongoService mongoService;
 
-    @RequestMapping("/save")
+    @RequestMapping("/forum/save")
     @AuthIgnore
-    public ResultBody saveTopic(TopicQuery topicQuery)
+    public ResultBody saveTopic(ForumQuery forumQuery)
     {
         ResultBody resultBody = new ResultBody();
-        mongoService.save(topicQuery,"topic");
+        mongoService.save(forumQuery,"topic");
         return resultBody;
     }
 

@@ -120,4 +120,26 @@ public class TopicController {
 
         return mav;
     }
+    /**
+     * 话题查询
+     */
+    @AuthIgnore
+    @RequestMapping(value = "/card")
+    public ModelAndView findCardForum(@LoginUser UserEntity user, HttpServletRequest request)
+    {
+        ModelAndView mav = new ModelAndView("/web/topic/card");
+        List<Map<String,Object>> topicForumList = new LinkedList<>();
+        List<UserEntity> managerList = new LinkedList<>();
+
+        Integer topicId = Integer.parseInt(request.getParameter("id"));
+        TopicQuery topicQuery = new TopicQuery();
+        topicQuery.setId(topicId);
+        TopicEntity topicEntity = topicService.findTopic(topicQuery);
+        if(topicEntity != null)
+        {
+            mav.addObject("topic",topicEntity);
+        }
+
+        return mav;
+    }
 }

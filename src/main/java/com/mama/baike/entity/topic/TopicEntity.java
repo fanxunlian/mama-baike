@@ -3,7 +3,7 @@ package com.mama.baike.entity.topic;
 import java.util.Date;
 
 public class TopicEntity {
-    private int id;
+    private Integer id;
     private String topicType;
     private String classType;
     private String name;
@@ -26,7 +26,7 @@ public class TopicEntity {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

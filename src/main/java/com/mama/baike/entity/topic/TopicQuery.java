@@ -11,6 +11,7 @@ public class TopicQuery extends PageQuery {
     private String topicUid;
     private Integer manageId;
 
+
     public Integer getId() {
         return id;
     }

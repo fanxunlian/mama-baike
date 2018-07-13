@@ -84,7 +84,7 @@
                         </div>
                         <div class="block-right">
                             <div class="forum-title">
-                                <a href="#"><span th:text="${forum.forum.name}">月度精华王vol.20丨就…7月的创造发帖王开始了啊（附5月</span></a>
+                                <a th:href="@{'/topic/card?id='+${forum.forum.id}}"><span th:text="${forum.forum.name}">月度精华王vol.20丨就…7月的创造发帖王开始了啊（附5月</span></a>
                             </div>
                             <div class="forum-creator">
                                 <span th:text="${forum.creator.nickName}+'   '+${forum.creator.location}"></span>
