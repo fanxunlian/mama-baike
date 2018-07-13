@@ -73,26 +73,30 @@
                 </div>
             </div>
             <div class="all-block">
-                <div class="line-forum">
-                    <div class="block-left">
-                        <img th:src="@{/web-static/imgs/ad/ad6.png}"/>
-                    </div>
-                    <div class="block-right">
-                        <div class="forum-title">
-                            <a href="#"><span>月度精华王vol.20丨就…7月的创造发帖王开始了啊（附5月</span></a>
-                        </div>
-                        <div class="forum-creator">
-                            虞美人 备孕中 广州市
-                        </div>
-                        <div class="show-time">23秒前</div>
-                        <div class="forum-replyer">
 
-                            <div class="replyer">
-                                <a href="#"><img th:src="@{/web-static/imgs/ad/ad9.jpg}"/></a>
+                <th:block th:each="forum,iterStat:${forumlist}">
+                    <div class="line-forum">
+                        <div class="block-left">
+                            <img th:src="@{'/api/upload/img/index?imgeName='+${forum.creator.imageUid}}"/>
+                        </div>
+                        <div class="block-right">
+                            <div class="forum-title">
+                                <a href="#"><span th:text="${forum.forum.name}">月度精华王vol.20丨就…7月的创造发帖王开始了啊（附5月</span></a>
+                            </div>
+                            <div class="forum-creator">
+                                <span th:text="${forum.creator.nickName}+'   '+${forum.creator.location}"></span>
+                            </div>
+                            <div class="show-time"><span th:text="${forum.time}"></span></div>
+                            <div class="forum-replyer">
+
+                                <div class="replyer">
+                                    <a href="#"><img th:src="@{'/api/upload/img/index?imgeName='+${forum.creator.imageUid}}"/></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </th:block>
+
             </div>
         </div>
     </div>

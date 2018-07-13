@@ -10,6 +10,9 @@ public class UserEntity {
     private String userType;
     private String mobile;
     private String userSalt;
+    private String location;
+    private String imageUid;
+    private Integer locationId;
     private Date createTime;
     private Date updateTime;
 
@@ -83,5 +86,29 @@ public class UserEntity {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Integer getLocationId() {
+        return locationId;
+    }
+
+    public void setLocationId(Integer locationId) {
+        this.locationId = locationId;
+    }
+
+    public String getImageUid() {
+        return imageUid;
+    }
+
+    public void setImageUid(String imageUid) {
+        this.imageUid = imageUid;
     }
 }

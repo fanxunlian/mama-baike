@@ -25,4 +25,13 @@ public class UserServiceImp implements UserService {
     {
         return userDao.queryObject(userQuery);
     }
+    /**
+     * 根据id查询用户
+     */
+    public UserEntity findUserById(Integer id)
+    {
+        UserQuery userQuery = new UserQuery();
+        userQuery.setId(id);
+        return userDao.queryObject(userQuery);
+    }
 }

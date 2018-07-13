@@ -14,4 +14,9 @@ public interface UserService {
      * 查询用户
      */
     public UserEntity findUser(UserQuery userQuery);
+
+    /**
+     * 根据id查询用户
+     */
+    public UserEntity findUserById(Integer id);
 }
