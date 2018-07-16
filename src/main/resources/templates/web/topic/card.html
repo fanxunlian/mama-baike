@@ -61,8 +61,45 @@
                 </div>
             </div>
         </div>
+        <div class="card-block">
+            <div class="card-left">
+                <a href="#">
+                    <img th:src="@{/web-static/imgs/ad/ad4.jpg}"/>
+                </a>
+            </div>
+            <div class="card-right">
+                <div class="card-creator-info">
+                    <div class="user-nick-name">
+                        <span th:text="${creator.nickName}">水平星座</span>
+                    </div>
+                    <!--<span>  宝宝5个月 </span>-->
+                    <span style="color: #BFBCBD" th:text="${creator.location}">陕西 西安</span>
+                </div>
+                <div class="card-content">
+                    <p th:utext="${forum.content}"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-block">
+            <div class="card-left">
+                <a href="#">
+                    <img th:src="@{/web-static/imgs/ad/ad4.jpg}"/>
+                </a>
+            </div>
+            <div class="card-right">
+                <div class="card-creator-info">
+                    <div class="user-nick-name">
+                        <span th:text="${creator.nickName}">水平星座</span>
+                    </div>
+                    <!--<span>  宝宝5个月 </span>-->
+                    <span style="color: #BFBCBD" th:text="${creator.location}">陕西 西安</span>
+                </div>
+                <div class="card-content">
+                    <p th:utext="${forum.content}"></p>
+                </div>
+            </div>
+        </div>
 
-        <div class="clear"></div>
     </div>
 
 </div>
