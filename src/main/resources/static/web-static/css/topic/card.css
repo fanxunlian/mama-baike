@@ -1,0 +1,99 @@
+.card-tiny-bar
+{
+    margin: 0px auto;
+    width: 800px;
+    height: 40px;
+}
+.card-tiny-bar span
+{
+    margin-left: 10px;
+    line-height: 40px;
+    font-size: 13px;
+
+}
+.card-body
+{
+    margin: 0px auto 10px auto;
+    width: 800px;
+    height: 100%;
+    background-color: white;
+    overflow:hidden
+}
+.card-body .layer
+{
+    margin: 10px auto 0px auto;
+    float: left;
+    width: 800px;
+    height: 100%;
+    overflow:hidden
+}
+.card-body .card-block
+{
+    border-bottom: 1px solid #67d8d9;
+    float: left;
+    width: 800px;
+    height: 100%;
+    overflow:hidden
+}
+.card-body  .card-title
+{
+    margin: 0px auto 10px auto;
+    width: 800px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #47bec0;
+    text-align: center;
+}
+.card-body .layer .card-block .card-left
+{
+    float: left;
+    width: 80px;
+    height: 100%;
+    overflow:hidden
+
+}
+.card-body .layer .card-block .card-left a img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.card-body .layer .card-block .card-right
+{
+    float: right;
+    width: 720px;
+    height: 100%;
+    overflow:hidden
+}
+.card-body .layer .card-block .card-right .card-creator-info
+{
+    float: right;
+    width: 720px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 14px;
+}
+.card-body .layer .card-block .card-right .card-creator-info .user-nick-name
+{
+}
+.card-body .layer .card-block .card-right .card-creator-info .user-nick-name span{
+    font-weight: bold;
+    color: RGB(123,195,95);
+}
+.card-body .layer .card-block .card-right .card-creator-info span
+{
+    margin-left: 20px;
+    float: left;
+    color: RGB(123,195,95);
+
+}
+.card-body .layer .card-block .card-right .card-content
+{
+    float: right;
+    width: 720px;
+    height: 100%;
+    background-color: white;
+}
+.clear{clear:both;} /* 清除空白盒子的所有浮动 */
