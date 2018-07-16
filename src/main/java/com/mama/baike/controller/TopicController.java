@@ -4,6 +4,7 @@ import com.mama.baike.annotation.AuthIgnore;
 import com.mama.baike.annotation.LoginUser;
 import com.mama.baike.common.utils.DateUtil;
 import com.mama.baike.entity.catalog.CatalogQuery;
+import com.mama.baike.entity.mongo.ContentEntity;
 import com.mama.baike.entity.system.DictionaryEntity;
 import com.mama.baike.entity.system.DictionaryQuery;
 import com.mama.baike.entity.topic.*;
@@ -121,7 +122,7 @@ public class TopicController {
         return mav;
     }
     /**
-     * 话题查询
+     * 论坛内容查询
      */
     @AuthIgnore
     @RequestMapping(value = "/card")
@@ -131,14 +132,14 @@ public class TopicController {
         List<Map<String,Object>> topicForumList = new LinkedList<>();
         List<UserEntity> managerList = new LinkedList<>();
 
-        Integer topicId = Integer.parseInt(request.getParameter("id"));
-        TopicQuery topicQuery = new TopicQuery();
-        topicQuery.setId(topicId);
-        TopicEntity topicEntity = topicService.findTopic(topicQuery);
-        if(topicEntity != null)
-        {
-            mav.addObject("topic",topicEntity);
-        }
+        Integer forumId = Integer.parseInt(request.getParameter("id"));
+        ForumEntity forum = forumService.findForumById(forumId);
+        mav.addObject("forum",forum);
+
+        ContentEntity contentEntity = mongoService.queryObject(forum.getContentUid());
+        forum.setContent(contentEntity.getContent());
+        UserEntity userEntity = userService.findUserById(forum.getCreatorId());
+        mav.addObject("creator",userEntity);
 
         return mav;
     }

@@ -13,7 +13,22 @@ import java.util.List;
 public class ForumServiceImp implements ForumService {
     @Autowired
     private ForumDao forumDao;
-
+    /**
+     * 话题内容列表
+     */
+    public ForumEntity findForum(ForumQuery forumQuery)
+    {
+        return forumDao.queryObject(forumQuery);
+    }
+    /**
+     * 根据Id话题内容列表
+     */
+    public ForumEntity findForumById(Integer id)
+    {
+        ForumQuery forumQuery = new ForumQuery();
+        forumQuery.setId(id);
+        return forumDao.queryObject(forumQuery);
+    }
     /**
      * 话题内容列表
      */

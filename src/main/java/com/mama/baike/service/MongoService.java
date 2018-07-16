@@ -1,5 +1,6 @@
 package com.mama.baike.service;
 
+import com.mama.baike.entity.mongo.ContentEntity;
 import org.apache.poi.ss.formula.functions.T;
 
 public interface MongoService {
@@ -11,5 +12,9 @@ public interface MongoService {
     /**
      * 查询对象
      */
-    public T queryObject(Object id,Class<T> classType,String collectionName);
+    public <T>T queryObject(Object id,Class classType,String collectionName);
+    /**
+     * 查询对象
+     */
+    public ContentEntity queryObject(Object id);
 }

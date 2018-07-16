@@ -10,10 +10,29 @@
         <result column="type" jdbcType="VARCHAR" property="type" />
         <result column="creator_id" jdbcType="INTEGER" property="creatorId" />
         <result column="remark" jdbcType="VARCHAR" property="remark" />
-        <result column="topic_content_uid" jdbcType="VARCHAR" property="topicContentUid" />
+        <result column="content_uid" jdbcType="VARCHAR" property="contentUid" />
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
     </resultMap>
+
+    <select id="queryObject" resultMap="BaseResultMap"
+            parameterType="com.mama.baike.entity.topic.ForumQuery">
+
+        select * from f_forum f where 1=1
+        <if test="id != null">
+            AND f.id = #{id}
+        </if>
+        <if test="topicId != null">
+            AND f.topic_id = #{topicId}
+        </if>
+        <if test="creatorId != null">
+            AND f.creator_id = #{creatorId}
+        </if>
+        <if test="type != null">
+            AND f.type = #{type}
+        </if>
+
+    </select>
 
     <select id="queryList" resultMap="BaseResultMap"
             parameterType="com.mama.baike.entity.topic.ForumQuery">

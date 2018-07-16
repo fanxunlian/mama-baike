@@ -8,6 +8,7 @@
     <link th:href="@{/web-static/css/common/common.css}" type="text/css" rel="stylesheet" media="screen"/>
     <link th:href="@{/web-static/css/topic/topic.css}" type="text/css" rel="stylesheet" media="screen"/>
     <link th:href="@{/web-static/css/topic/forum.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/topic/card.css}" type="text/css" rel="stylesheet" media="screen"/>
 
 </head>
 <body>
@@ -33,10 +34,38 @@
         <li><a href="age.html" ><span>同龄</span></a></li>
     </div>
 </div>
+<div class="card-tiny-bar">
+    <span>妈妈网>时尚生活>今天穿什么？</span>
+</div>
+<div class="card-body">
+    <div class="card-title" th:text="${forum.name}">
+        小小产房见证不一样的精彩故事，产房故事征集令来啦！
+    </div>
+    <div class="layer">
+        <div class="card-block">
+            <div class="card-left">
+                <a href="#">
+                    <img th:src="@{/web-static/imgs/ad/ad4.jpg}"/>
+                </a>
+            </div>
+            <div class="card-right">
+                <div class="card-creator-info">
+                    <div class="user-nick-name">
+                        <span th:text="${creator.nickName}">水平星座</span>
+                    </div>
+                    <!--<span>  宝宝5个月 </span>-->
+                    <span style="color: #BFBCBD" th:text="${creator.location}">陕西 西安</span>
+                </div>
+                <div class="card-content">
+                    <p th:utext="${forum.content}"></p>
+                </div>
+            </div>
+        </div>
 
+        <div class="clear"></div>
+    </div>
 
-
-
+</div>
 <script type="text/javascript" th:src="@{/web-static/js/jquery/jquery-1.7.2.min.js}"></script>
 <script type="text/javascript" th:src="@{/web-static/js/topic/forum.js}"></script>
 </body>
