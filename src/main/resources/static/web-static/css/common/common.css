@@ -17,3 +17,17 @@ body{
     margin: 0px auto;
     padding: 0px;
 }
+.mama-top-bar .top-bar-right
+{
+    float: right;
+    width: 400px;
+    height: 100%;
+    line-height: 30px;
+
+}
+.mama-top-bar .top-bar-right span{
+    font-size: 12px;
+}
+.mama-top-bar .top-bar-right a{
+    margin-left: 20px;
+}
