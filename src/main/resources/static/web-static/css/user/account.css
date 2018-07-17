@@ -1,0 +1,223 @@
+body
+{
+    background-color: #f4f8fb;
+}
+.account-nav
+{
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    background-color: #47bec0;
+}
+
+.account-nav .account-bar
+{
+    margin: auto;
+    width: 1000px;
+    height: 100%;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bold;
+    z-index: 100;
+
+}
+.account-nav .account-bar .bar-left
+{
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+.account-nav .account-bar .bar-right
+{
+    float: right;
+    width: 200px;
+    height: 100%;
+
+}
+.account-nav .account-bar .bar-right img
+{
+    margin-top: 5px;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.account-nav .account-bar .bar-right .account-account
+{
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    margin-top: 5px;
+    float: right;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    display: none;
+    border: 1px solid #c9cccf;
+}
+.account-nav .account-bar .bar-right .account-account img
+{
+    margin: 20px 75px 10px 75px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid #cccccc;
+}
+.account-nav .account-bar .bar-right .account-account .account-nick-name
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.account-nav .account-bar .bar-right .account-account .account-nick-name span
+{
+    color: #47bec0;
+}
+.account-nav .account-bar .bar-left span
+{
+    margin-left: 10px;
+    color: white;
+}
+
+.account-layer
+{
+    margin: auto;
+    width: 1000px;
+    height: auto;
+}
+
+.account-layer .account-body
+{
+    margin: 0px auto;
+    width: 1000px;
+    height: 500px;
+}
+.account-layer .account-body .account-top-tap
+{
+    margin: auto;
+    width: 100%;
+    height: 20px;
+}
+.account-layer .account-body .account-left
+{
+    margin-top: 10px;
+    float: left;
+    width: 300px;
+    height: 500px;
+    background-color: #f4f8fb;
+}
+.account-layer .account-body .account-right
+{
+    margin-top: 10px;
+    float: right;
+    width: 700px;
+    height: 500px;
+    background-color: #f4f8fb;
+
+}
+
+.account-layer .account-body .account-left .personal-info
+{
+    margin: auto;
+    width: 280px;
+    height: 400px;
+    background-color: white;
+}
+.account-layer .account-body .account-left .personal-info .top-img{
+    width: 100%;
+    height: 150px;
+}
+.account-layer .account-body .account-left .personal-info .top-img img
+{
+    width: 100%;
+    height: 150px;
+}
+.account-layer .account-body .account-left .personal-info  .my-img{
+
+    position: relative;
+    top: -50px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    border-radius: 50px;
+}
+.account-layer .account-body .account-left .personal-info  .my-img img
+{
+    width: 99px;
+    height: 99px;
+    border-radius: 48px;
+}
+
+.account-layer .account-body .account-left .personal-info   .nick-name
+{
+    position: relative;
+    top: -30px;
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.account-layer .account-body .account-left .personal-info   .nick-name span
+{
+    color: #47bec0;
+    font-weight: bold;
+}
+.account-layer .account-body .account-left .personal-info .signature
+{
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: 100px;
+    font-size: 14px;
+    text-align: center;
+}
+.account-layer .account-body .account-left .personal-info .bottom{
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: 70px;
+}
+.account-layer .account-body .account-left .personal-info .bottom .fans
+{
+    float: left;
+    width: 138px;
+    height: 100%;
+    border-right: 1px solid #c9cccf;
+    text-align: center;
+
+}
+.account-layer .account-body .account-left .personal-info .bottom .account-title{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+.account-layer .account-body .account-left .personal-info .bottom .focus
+{
+    float: left;
+    width: 138px;
+    height: 100%;
+    text-align: center;
+}
+.account-layer .account-body .account-left .personal-info .bottom .account-title span{
+
+    width: 138px;
+    height: 30px;
+    line-height: 30px;
+    color: grey;
+    font-size: 14px;
+
+}
+.account-layer .account-body .account-left .personal-info .bottom .account-number
+{
+    text-align: center;
+    width: 138px;
+    height: 30px;
+    line-height: 30px;
+    color: #0e0e0e;
+    font-size: 16px;
+    font-weight: bold;
+}

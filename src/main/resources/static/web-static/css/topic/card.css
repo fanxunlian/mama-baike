@@ -38,7 +38,6 @@
     margin-bottom: 10px;
     width: 800px;
     height: auto;
-    border-bottom: 1px dashed lavender;
     overflow:hidden
 }
 .card-body .card-block::after
@@ -61,7 +60,7 @@
 
     float: left;
     width: 80px;
-    height: 100%;
+    height: auto;
     overflow:hidden
 
 }

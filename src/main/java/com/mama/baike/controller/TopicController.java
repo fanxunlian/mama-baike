@@ -41,6 +41,9 @@ public class TopicController {
     @Autowired
     private MongoService mongoService;
 
+    @Autowired
+    private ReplyService replyService;
+
     @AuthIgnore
     @RequestMapping(value = "/index")
     public ModelAndView topicIndex(@LoginUser UserEntity user){
@@ -131,6 +134,7 @@ public class TopicController {
         ModelAndView mav = new ModelAndView("/web/topic/card");
         List<Map<String,Object>> topicForumList = new LinkedList<>();
         List<UserEntity> managerList = new LinkedList<>();
+        List<Map<String,Object>>replyMapList = new LinkedList<>();
 
         Integer forumId = Integer.parseInt(request.getParameter("id"));
         ForumEntity forum = forumService.findForumById(forumId);
@@ -141,6 +145,22 @@ public class TopicController {
         UserEntity userEntity = userService.findUserById(forum.getCreatorId());
         mav.addObject("creator",userEntity);
 
+        ReplyQuery replyQuery = new ReplyQuery();
+        replyQuery.setForumId(forum.getId());
+        List<ReplyEntity> replyList = replyService.findReplyList(replyQuery);
+
+        for (ReplyEntity reply : replyList)
+        {
+            Map<String,Object>replyerMap = new HashMap<>();
+            UserEntity replier = userService.findUserById(reply.getReplierId());
+            replyerMap.put("replier",replier);
+            replyerMap.put("reply",reply);
+
+            contentEntity = mongoService.queryObject(reply.getContentUid());
+            reply.setContent(contentEntity.getContent());
+            replyMapList.add(replyerMap);
+        }
+        mav.addObject("replylist",replyMapList);
         return mav;
     }
 }
