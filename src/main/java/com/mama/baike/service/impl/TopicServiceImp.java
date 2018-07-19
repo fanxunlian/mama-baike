@@ -21,6 +21,15 @@ public class TopicServiceImp implements TopicService {
         return topicDao.queryObject(topicQuery);
     }
     /**
+     * 查询话题
+     */
+    public TopicEntity findTopicById(Integer id)
+    {
+        TopicQuery topicQuery = new TopicQuery();
+        topicQuery.setId(id);
+        return topicDao.queryObject(topicQuery);
+    }
+    /**
      * 查询话题列表
      */
     public List<TopicEntity> findTopicList(TopicQuery topicQuery)

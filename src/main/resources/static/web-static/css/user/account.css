@@ -1,7 +1,3 @@
-a:hover{color: #400040;text-decoration:none /*无下划线*/ ;color: #C20C0C;}
-a:link{color:#400040;text-decoration:none /*无下划线*/}
-a:visited{color:#400040;text-decoration:none /*无下划线*/}
-a:active{color:#400040;text-decoration:none /*无下划线*/}
 
 body
 {
@@ -31,6 +27,7 @@ body
     float: left;
     width: 600px;
     height: 100%;
+
 }
 .account-nav .account-bar .bar-right
 {
@@ -76,14 +73,11 @@ body
     line-height: 30px;
     text-align: center;
 }
-.account-nav .account-bar .bar-right .account-account .account-nick-name span
-{
-    color: #47bec0;
-}
 .account-nav .account-bar .bar-left span
 {
     margin-left: 10px;
     color: white;
+
 }
 
 .account-layer
@@ -241,7 +235,7 @@ body
     float: left;
     width: 100%;
     height: 50px;
-    background-color: #f4f8fb;
+    background-color: RGB(240,240,240);
 }
 .account-layer .account-body .account-right .account-right-title li{
     float: left;
@@ -252,15 +246,98 @@ body
     font-weight: bold;
     list-style: none;
     line-height: 50px;
+    color: RGB(71,190,92);
 
 }
-.account-layer .account-body .account-right .account-right-title li span
+.account-layer .account-body .account-right .circle-list
 {
-    color: grey;
-}
-.account-layer .account-body .account-right .account-list
-{
+    float: left;
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-color: white;
+}
+.account-layer .account-body .account-right .send-list
+{
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: none;
+    background-color: lightgrey;
+}
+.account-layer .account-body .account-right .message-list
+{
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: none;
+    background-color: #C20C0C;
+}
+.account-layer .account-body .account-left .personal-title
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.account-layer .account-body .account-left .personal-title span{
+    margin-top: 10px;
+}
+.account-layer .account-body .account-left .personal-focus
+{
+    margin: 10px;
+    width: 280px;
+    height: 360px;
+    background-color: white;
+}
+.account-layer .account-body .account-left .personal-fans
+{
+    margin: 10px;
+    width: 280px;
+    height: 360px;
+    background-color: white;
+}
+
+.account-layer .account-body .account-left .img-list
+{
+    width: 280px;
+    height: 280px;
+}
+.account-layer .account-body .account-left .img-list .img-block
+{
+    float: left;
+    margin: 5px;
+    width: 60px;
+    height: 80px;
+}
+.account-layer .account-body .account-left .img-list .img-block img
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #c9cccf;
+}
+.account-layer .account-body .account-left .img-list .img-block .short-nick-name{
+    width: 50px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+.account-layer .account-body .account-left  .more{
+    padding-top: 10px;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #dedede;
+}
+.active{
+    color: #C20C0C;
 }

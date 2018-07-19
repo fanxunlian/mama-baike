@@ -5,8 +5,8 @@
     <meta name="keywords" content="育儿" />
     <meta name="description" content="育儿平台" />
     <!--css-->
-    <link href="../../../static/web-static/css/common/common.css" type="text/css" rel="stylesheet" media="screen"/>
-    <link href="../../../static/web-static/css/user/account.css" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/user/account.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/common/common.css}" type="text/css" rel="stylesheet" media="screen"/>
 
 </head>
 <body>
@@ -21,22 +21,22 @@
 <div class="account-nav">
     <div class="account-bar">
         <div class="bar-left">
-            <a href="#"><span>首页</span></a>
-            <a href="#" style="margin-left: 100px"><span>知道</span></a>
-            <a href="#" style="margin-left: 100px"><span>社区</span></a>
+            <a href="/"><span>首页</span></a>
+            <a href="/topic/index" style="margin-left: 100px"><span>知道</span></a>
+            <a href="/baike/catalog?id=1" style="margin-left: 100px"><span>社区</span></a>
             <a href="#" style="margin-left: 100px"><span>发现</span></a>
 
         </div>
         <div class="bar-right">
             <a href="#">
-                <img id="account" src="../../../static/web-static/imgs/ad/ad14.jpg"/>
+                <img id="account" th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
             </a>
             <div class="account-account">
                 <a href="#">
-                    <img  src="../../../static/web-static/imgs/ad/ad14.jpg"/>
+                    <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
                 </a>
                 <div class="account-nick-name">
-                    <span>小宝白</span>
+                    <a href="#">  <span>小宝白</span></a>
                 </div>
             </div>
         </div>
@@ -50,20 +50,22 @@
             <div class="personal-info">
                <div class="top-img">
                    <a href="#">
-                       <img  src="../../../static/web-static/imgs/ad/myinfo.jpg"/>
+                       <img  th:src="@{/web-static/imgs/ad/myinfo.jpg}"/>
                    </a>
 
                </div>
                 <div class="my-img">
                     <a href="#">
-                        <img  src="../../../static/web-static/imgs/ad/ad14.jpg"/>
+                        <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
                     </a>
                 </div>
                 <div class="nick-name">
                     <span>小宝贝</span>
                 </div>
                 <div class="signature">
-                    备孕经验大全，谁来谁怀孕备孕经验大全，谁来谁怀孕备孕经验大全，谁来谁怀孕
+                    <span>
+                        备孕经验大全，谁来谁怀孕备孕经验大全，谁来谁怀孕备孕经验大全，谁来谁怀孕
+                    </span>
                 </div>
                 <div class="bottom">
                     <div class="fans">
@@ -88,18 +90,142 @@
                 </div>
 
             </div>
+            <div class="personal-focus">
+                <div class="personal-title">
+                    关注
+                </div>
+                <div class="img-list">
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name"><span>小宝贝</span></div>
+                    </div>
+                    <div class="img-block">
+                        <a href="javas">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                </div>
+                <div class="more">
+                    <a href="#"><span>查看更多></span></a>
+                </div>
+            </div>
+            <div class="personal-fans">
+                <div class="personal-title">
+                    粉丝
+                </div>
+                <div class="img-list">
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">小宝贝</div>
+                    </div>
+                    <div class="img-block">
+                        <a href="#">
+                            <img  th:src="@{/web-static/imgs/ad/ad14.jpg}"/>
+                        </a>
+                        <div class="short-nick-name">
+                            <a href="#"><span>小宝贝</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more"><a href="#"><span>查看更多></span></a></div>
+            </div>
         </div>
         <div class="account-right">
             <div class="account-right-title">
-                <li><a href="#"><span>动态</span></a></li>
-                <li><a href="#"><span>提醒</span></a></li>
-                <li><a href="#"><span>消息</span></a></li>
-                <li><a href="#"><span>圈子</span></a></li>
-                <li><a href="#"><span>关注</span></a></li>
-                <li><a href="#"><span>粉丝</span></a></li>
-                <li><a href="#"><span>发布</span></a></li>
+                <li><a href="javascript:void(0)"><span  id="circle-list">圈子</span></a></li>
+                <li><a href="javascript:void(0)" ><span id ="send-list">发布</span></a></li>
+                <li><a href="javascript:void(0)" ><span id = "message-list">消息</span></a></li>
             </div>
-            <div class="account-list">
+            <div class="circle-list">
+
+            </div>
+            <div class="send-list">
+
+            </div>
+            <div class="message-list">
 
             </div>
         </div>
@@ -108,8 +234,8 @@
 
 
 
-<script type="text/javascript" src="../../../static/web-static/js/jquery/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="../../../static/web-static/js/user/account.js"></script>
+<script type="text/javascript" th:src="@{/web-static/js/jquery/jquery-1.7.2.min.js}"></script>
+<script type="text/javascript" th:src="@{/web-static/js/user/account.js}"></script>
 
 </body>
 </html>

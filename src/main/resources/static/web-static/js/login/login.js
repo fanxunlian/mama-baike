@@ -14,7 +14,7 @@ $(".login-btn").click(function(){
                 }
                 if (res['code'] == 200) {
                     console.log("登录成功");
-                    window.location.href = "/";
+                    window.location.href = "/user/account";
                 } else{
                     alert(res['message']);
 

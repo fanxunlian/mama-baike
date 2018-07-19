@@ -11,6 +11,10 @@ public interface TopicService {
      */
     public TopicEntity findTopic(TopicQuery topicQuery);
     /**
+     * 查询话题
+     */
+    public TopicEntity findTopicById(Integer id);
+    /**
      * 查询话题列表
      */
     public List<TopicEntity> findTopicList(TopicQuery topicQuery);
