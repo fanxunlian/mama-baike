@@ -5,14 +5,14 @@
     <meta name="keywords" content="育儿" />
     <meta name="description" content="育儿平台" />
     <!--css-->
-    <link th:href="@{/web-static/css/user/account.css}" type="text/css" rel="stylesheet" media="screen"/>
     <link th:href="@{/web-static/css/common/common.css}" type="text/css" rel="stylesheet" media="screen"/>
+    <link th:href="@{/web-static/css/user/account.css}" type="text/css" rel="stylesheet" media="screen"/>
 
 </head>
 <body>
 <div class="mama-top-bar">
     <div class="top-bar-right">
-        <a href="#"><span>欢迎，小宝贝</span> </a>
+        <a href="/user/account"><span>欢迎，小宝贝</span> </a>
         <a href="#"><span>退出</span> </a>
         <a href="#"><span>帮助中心</span> </a>
         <a href="#"><span>移动端</span> </a>
@@ -23,8 +23,8 @@
         <div class="bar-left">
             <a href="/"><span>首页</span></a>
             <a href="/topic/index" style="margin-left: 100px"><span>知道</span></a>
-            <a href="/baike/catalog?id=1" style="margin-left: 100px"><span>社区</span></a>
-            <a href="#" style="margin-left: 100px"><span>发现</span></a>
+            <a href="/topic/index" style="margin-left: 100px"><span>社区</span></a>
+            <a href="/topic/index" style="margin-left: 100px"><span>发现</span></a>
 
         </div>
         <div class="bar-right">
@@ -215,20 +215,17 @@
         </div>
         <div class="account-right">
             <div class="account-right-title">
-                <li><a href="javascript:void(0)"><span  id="circle-list">圈子</span></a></li>
-                <li><a href="javascript:void(0)" ><span id ="send-list">发布</span></a></li>
-                <li><a href="javascript:void(0)" ><span id = "message-list">消息</span></a></li>
+                <li><a href="javascript:void(0)"><span  id="id-circle-list">圈子</span></a></li>
+                <li><a href="javascript:void(0)" ><span id ="id-send-list">发布</span></a></li>
+                <li><a href="javascript:void(0)" ><span id = "id-message-list">消息</span></a></li>
             </div>
-            <div class="circle-list">
 
-            </div>
-            <div class="send-list">
+           <div class="account-circle-list">
 
-            </div>
-            <div class="message-list">
+           </div>
 
-            </div>
         </div>
+
     </div>
 </div>
 

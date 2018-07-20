@@ -1,5 +1,6 @@
 package com.mama.baike.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.mama.baike.dao.topic.TopicUserDao;
 import com.mama.baike.entity.topic.TopicUserEntity;
 import com.mama.baike.entity.topic.TopicUserQuery;
@@ -28,6 +29,7 @@ public class TopicUserServiceImp implements TopicUserService {
 
     public List<TopicUserEntity> findTopicUserList(TopicUserQuery topicUserQuery)
     {
+        PageHelper.startPage(topicUserQuery.getPageIndex(),topicUserQuery.getPageSize());
         return topicUserDao.queryList(topicUserQuery);
     }
 }

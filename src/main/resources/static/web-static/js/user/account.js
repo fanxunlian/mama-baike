@@ -11,61 +11,83 @@ $(document).ready(function(){
         $(".account-account").hide()
 
     });
+    getCircleList();
 
-    $(".account-account").mouseover(function(){
-        $(".account-account").show()
+
+    $("#id-circle-list").click(function(){
+
+        clickTitle("circle")
+        getCircleList();
     });
-    $(".account-account").mouseout(function(){
-        $(".account-account").hide()
+    $("#id-send-list").click(function(){
+        clickTitle("sendTopic")
+    });
+    $("#id-message-list").click(function(){
+        clickTitle("message")
     });
 
-    $("#circle-list").click(function(){
-        $(".circle-list").show();
-        $(".send-list").hide();
-        $(".message-list").hide();
 
-        $("#circle-list").addClass("active");
-        $("#send-list").removeClass("active");
-        $("#message-list").removeClass("active");
-
+    function getCircleList() {
+        var circleLine = "";
         $.ajax({
             type: "POST",
             url: "/api/topic/user/list",
             data: JSON.stringify({"userId":1}),
             contentType: "application/json",
             dataType: "json",
-            success: function(data){
-               /* $('#resText').empty();   //清空resText里面的所有内容
-                var html = '';
-                $.each(data, function(commentIndex, comment){
-                    html += '<div class="comment"><h6>' + comment['username']
-                        + ':</h6><p class="para"' + comment['content']
-                        + '</p></div>';
+            success: function(result){
+
+                $.each(result.data,function (index,val) {
+                    circleLine+='<div class="line-block">';
+                    circleLine+='<a href="/topic/forum?id='+val.topicEntity.id+'">';
+                    circleLine+='<img  src="/api/upload/img/index?imgeName='+val.topicEntity.imageUid+'"/>';
+                    circleLine+='</a>';
+                    circleLine+='<div class="circle-title">';
+                    circleLine+='<a href=/topic/forum?id='+val.topicEntity.id+'><span>'+val.topicEntity.name+'</span></a>';
+                    circleLine+='</div>';
+                    circleLine+='<div class="remark"><a href=/topic/forum?id='+val.topicEntity.id+'><span>'+val.topicEntity.remark+'</span></a></div>';
+                    circleLine+='</div>';
                 });
-                $('#resText').html(html);*/
-                console.log(result)
+
+
+                $('.account-circle-list').html(circleLine);
+                console.log(data)
             }
         });
+    }
 
-    });
-    $("#send-list").click(function(){
-        $(".circle-list").hide();
-        $(".send-list").show();
-        $(".message-list").hide();
+    function clickTitle( obj ) {
+        if(obj == "circle")
+        {
+            $(".account-circle-list").show();
+            $(".account-send-list").hide();
+            $(".account-message-list").hide();
 
-        $("#circle-list").removeClass("active");
-        $("#send-list").addClass("active");
-        $("#message-list").removeClass("active");
-    });
-    $("#message-list").click(function(){
-        $(".circle-list").hide();
-        $(".send-list").hide();
-        $(".message-list").show();
+            $("#id-circle-list").addClass("active");
+            $("#id-send-list").removeClass("active");
+            $("#id-message-list").removeClass("active");
+        }
+        else if(obj == "sendTopic")
+        {
+            $(".account-circle-list").hide();
+            $(".account-send-list").show();
+            $(".account-message-list").hide();
 
-        $("#circle-list").removeClass("active");
-        $("#send-list").removeClass("active");
-        $("#message-list").addClass("active");
-    });
+            $("#id-circle-list").removeClass("active");
+            $("#id-send-list").addClass("active");
+            $("#id-message-list").removeClass("active");
+        }
+        else if(obj == "message")
+        {
+            $(".account-circle-list").hide();
+            $(".account-send-list").hide();
+            $(".account-message-list").show();
+
+            $("#id-circle-list").removeClass("active");
+            $("#id-send-list").removeClass("active");
+            $("#id-message-list").addClass("active");
+        }
+    }
 
 
 
