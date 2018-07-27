@@ -31,5 +31,6 @@ public class TopicUserServiceImp implements TopicUserService {
     {
         PageHelper.startPage(topicUserQuery.getPageIndex(),topicUserQuery.getPageSize());
         return topicUserDao.queryList(topicUserQuery);
+
     }
 }

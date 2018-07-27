@@ -51,6 +51,7 @@ public class UserController {
     public ModelAndView accountInfo(@LoginUser UserEntity user) {
         ModelAndView mav = new ModelAndView("web/user/account");
         mav.addObject("isLogined", true);
+        mav.addObject("loginUser", user);
         return mav;
     }
 }

@@ -2,7 +2,7 @@ spring:
   profiles:
     active: dev
   application:
-    name: RISKCONTROL.SERVICE.REPORT.dev-1
+    name: report
    # 指定静态资源的路径
   resources:
     static-locations: classpath:static/
@@ -11,6 +11,23 @@ spring:
     suffix: .html
     mode: HTML5
     prefix: classpath:templates/
+  # 邮箱配置
+  mail:
+    from: 13571845308@163.com
+    host: smtp.163.com
+    username: 13571845308@163.com
+    password: fanxun19841002
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          timeout: 25000
+          connectiontimeout: 5000
+          writetimeout: 5000
 
 logging:
   config: classpath:logback-spring.xml
