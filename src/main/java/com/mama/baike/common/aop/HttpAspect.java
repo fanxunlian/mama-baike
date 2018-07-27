@@ -1,6 +1,7 @@
 package com.mama.baike.common.aop;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,6 +30,7 @@ public class HttpAspect {
         logger.info("ip={}",request.getRemoteAddr());
         logger.info("class_method={}", joinPoint.getSignature().getDeclaringTypeName()+"."+joinPoint.getSignature().getName());
         logger.info("args={}",joinPoint.getArgs());
+
     }
     @After("log()")
     public void doAfter(){
