@@ -22,7 +22,7 @@ public class MailServiceImp implements MailService {
 
     public void sendSimpleMail(String to, String subject, String content)
     {
-       /* SimpleMailMessage message = new SimpleMailMessage();
+       SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(from);
         message.setTo(to);
         message.setSubject(subject);
@@ -33,8 +33,7 @@ public class MailServiceImp implements MailService {
         } catch (Exception e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
-        }*/
-       throw new GlobalException("失败");
+        }
     }
     public void sendHtmlMail(String to, String subject, String content)
     {

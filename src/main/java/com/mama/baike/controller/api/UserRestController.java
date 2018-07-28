@@ -4,23 +4,26 @@ import com.mama.baike.annotation.AuthIgnore;
 import com.mama.baike.annotation.LoginUser;
 import com.mama.baike.common.ResultBody;
 import com.mama.baike.common.constants.WebMvcConstant;
+import com.mama.baike.common.utils.RandomValidateCodeUtil;
 import com.mama.baike.entity.user.UserEntity;
 import com.mama.baike.entity.user.UserQuery;
 import com.mama.baike.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/user")
 public class UserRestController {
+    private static final Logger logger = LoggerFactory.getLogger(UserRestController.class);
+
 
     @Autowired
     private UserService userService;
@@ -89,5 +92,49 @@ public class UserRestController {
         session.removeAttribute(WebMvcConstant.LOGIN_USER_SESSION_KEY);
         resultBody.setMessage("退出成功");
         return resultBody;
+    }
+
+    /**
+     * 生成验证码
+     */
+    @AuthIgnore
+    @RequestMapping(value = "/getVerify")
+    public void getVerify(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            response.setContentType("image/jpeg");//设置相应类型,告诉浏览器输出的内容为图片
+            response.setHeader("Pragma", "No-cache");//设置响应头信息，告诉浏览器不要缓存此内容
+            response.setHeader("Cache-Control", "no-cache");
+            response.setDateHeader("Expire", 0);
+            RandomValidateCodeUtil randomValidateCode = new RandomValidateCodeUtil();
+            randomValidateCode.getRandcode(request, response);//输出验证码图片方法
+        } catch (Exception e) {
+            logger.error("获取验证码失败>>>>   ", e);
+        }
+    }
+
+    /**
+     * 忘记密码页面校验验证码
+     */
+    @AuthIgnore
+    @RequestMapping(value = "/checkVerify")
+    @ResponseBody
+    public boolean checkVerify(HttpServletRequest request, HttpSession session) {
+        try{
+            //从session中获取随机数
+            String inputStr = request.getParameter("verifyCode").toLowerCase();
+            String random = (String) session.getAttribute("RANDOMVALIDATECODEKEY");
+            session.removeAttribute("RANDOMVALIDATECODEKEY");
+            if (random == null) {
+                return false;
+            }
+            if (random.toLowerCase().equals(inputStr)) {
+                return true;
+            } else {
+                return false;
+            }
+        }catch (Exception e){
+            logger.error("验证码校验失败", e);
+            return false;
+        }
     }
 }
