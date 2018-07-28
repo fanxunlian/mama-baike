@@ -118,23 +118,27 @@ public class UserRestController {
     @AuthIgnore
     @RequestMapping(value = "/checkVerify")
     @ResponseBody
-    public boolean checkVerify(HttpServletRequest request, HttpSession session) {
+    public ResultBody checkVerify(HttpServletRequest request, HttpSession session) {
+        ResultBody resultBody = new ResultBody();
         try{
             //从session中获取随机数
             String inputStr = request.getParameter("verifyCode").toLowerCase();
             String random = (String) session.getAttribute("RANDOMVALIDATECODEKEY");
             session.removeAttribute("RANDOMVALIDATECODEKEY");
             if (random == null) {
-                return false;
+                resultBody.setCode(500);
+                return resultBody;
             }
             if (random.toLowerCase().equals(inputStr)) {
-                return true;
+                return resultBody;
             } else {
-                return false;
+                resultBody.setCode(500);
+                return resultBody;
             }
         }catch (Exception e){
             logger.error("验证码校验失败", e);
-            return false;
+            resultBody.setCode(500);
+            return resultBody;
         }
     }
 }
