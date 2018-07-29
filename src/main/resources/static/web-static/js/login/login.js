@@ -1,8 +1,13 @@
+//获取验证码
+function getVerify(obj){
+    obj.src =   "/api/user/getVerify";
+}
 
-$(".login-btn").click(function(){
+$(".sign-btn-panel").click(function(){
     var userName = $("#username").val();
     var userPass = $("#userpass").val();
-    var data = {"userName":userName,"userPass":userPass};
+    var verifyCode = $("#verifycode").val();
+    var data = {"userName":userName,"userPass":userPass,"verifyCode":verifyCode};
     console.log(data);
     $.ajax(
         {

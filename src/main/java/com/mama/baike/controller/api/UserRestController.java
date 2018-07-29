@@ -35,9 +35,9 @@ public class UserRestController {
     @RequestMapping("/login-by-pass")
     @AuthIgnore
     public ResultBody loginByPass(HttpServletRequest request,
-                                  HttpServletResponse response,
                                   @RequestParam(value = "userName") String userName,
-                                  @RequestParam(value = "userPass") String userPass)  throws Exception
+                                  @RequestParam(value = "userPass") String userPass,
+                                  @RequestParam(value = "verifyCode") String verifyCode)  throws Exception
     {
         ResultBody resultBody = new ResultBody();
         UserQuery userQuery = new UserQuery();
@@ -52,6 +52,28 @@ public class UserRestController {
             return resultBody;
         }
         HttpSession session = request.getSession();
+
+        try{
+            //从session中获取随机数
+            String inputStr = verifyCode.toLowerCase();
+            String random = (String) session.getAttribute("RANDOMVALIDATECODEKEY");
+            session.removeAttribute("RANDOMVALIDATECODEKEY");
+            if (random == null) {
+                resultBody.setCode(ResultBody.ERROR_EXCEPTION);
+                return resultBody;
+            }
+            if (!random.toLowerCase().equals(inputStr)) {
+                resultBody.setCode(ResultBody.ERROR_EXCEPTION);
+                return resultBody;
+            }
+
+        }catch (Exception e){
+            logger.error("验证码校验失败", e);
+            resultBody.setCode(ResultBody.ERROR_EXCEPTION);
+            return resultBody;
+        }
+
+
         session.setAttribute(WebMvcConstant.LOGIN_USER_SESSION_KEY, userEntity.getId());
 
         resultBody.setMessage("登录成功");
@@ -69,6 +91,8 @@ public class UserRestController {
                             @RequestParam(value = "verifyCode") String verifyCode)
     {
         UserEntity userEntity = new UserEntity();
+
+
         userEntity.setId(1111);
 
         HttpSession session = request.getSession();

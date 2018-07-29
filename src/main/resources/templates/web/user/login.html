@@ -10,6 +10,7 @@
     <link href="../../../static/web-static/css/login/login.css" type="text/css" rel="stylesheet" media="screen"/>
 
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src = "../../../static/web-static/js/login/login.js"></script>
 </head>
 <body>
 <div class="login-warp">
@@ -37,11 +38,11 @@
 
         <div class="verify-warp">
             <div class="verify-code">
-                <input type="text" class="form-control height48 font14" placeholder="验证码" aria-label="verifyCode">
+                <input type="text" class="form-control height48 font14" placeholder="验证码" aria-label="verifyCode" id="verifycode">
 
             </div>
             <div class="verify-code-img">
-                <img style="width: 120px;height: 50px" src="http://localhost:6395/api/user/getVerify"/>
+                <img style="width: 120px;height: 50px" src="http://localhost:6395/api/user/getVerify" onclick="getVerify(this);"/>
             </div>
         </div>
 
